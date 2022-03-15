@@ -1,0 +1,23 @@
+.navbar {
+    background-color: #1A4635;
+}
+
+.container-fluid {
+    width: 100%;
+}
+
+.navbar-brand {
+    position: relative;
+    left: 50px;
+}
+
+#footer {
+   position: absolute;
+   bottom:0;
+   width:100%;
+}
+
+.nav {
+    position: relative;
+    right: 30px;
+}
