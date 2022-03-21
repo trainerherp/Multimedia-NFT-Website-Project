@@ -1,0 +1,47 @@
+p,
+button {
+  font-family: "Source Serif Pro", serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Nunito", sans-serif;
+}
+
+.bg-primary {
+  background-color: #1a4635;
+}
+
+header {
+  background-image: linear-gradient(
+      to right,
+      rgba(5, 24, 33, 0.4) 0%,
+      rgba(5, 24, 33, 0.4) 55%,
+      transparent 50%
+    ),
+    url("https://images.pexels.com/photos/2310123/pexels-photo-2310123.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+  height: 100vh;
+  background-size: cover;
+  background-position: center center;
+}
+
+.header__title {
+  font-size: 3.75rem;
+  font-weight: 200;
+}
+
+.header-left {
+  padding-right: 15rem;
+}
+
+button {
+  border-radius: 0 !important;
+}
+
+header > nav a {
+  color: black;
+}

@@ -1,163 +1,228 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="navbar.css">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;500;700;900&family=Source+Serif+Pro:wght@300;400;700;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- External css -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="navbar.css" />
 
     <title>Hello, world!</title>
-</head>
+  </head>
 
-<body>
-
+  <body>
     <!-- NavBar -->
-    <nav class="navbar navbar-light">
-        <div class="container-fluid">
-            <a class="navbar-brand text-light" href="#">MULMED</a>
-            <ul class="nav">
-                <li class="nav-item">
-                    <a class="nav-link active  text-light" aria-current="page" href="#">Active</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link  text-light" href="#">Link</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link  text-light" href="#">Link</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link disabled  text-light" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-                </li>
-            </ul>
-        </div>
 
-    </nav>
     <!-- NavBar end -->
 
+    <!-- header -->
+    <header class="container-fluid p-0">
+      <nav class="text-black navbar navbar-light container-fluid">
+        <div class="container">
+          <a class="navbar-brand" href="#">MULMED</a>
+          <ul class="nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Active</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link disabled"
+                href="#"
+                tabindex="-1"
+                aria-disabled="true"
+                >Disabled</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <div class="container py-5">
+        <div class="row">
+          <div class="col-7 header-left">
+            <h1 class="text-white header__title">
+              Discover, create, and sell <br />
+              extraordinary
+              <span class="fw-bold">NFTs</span>
+            </h1>
+            <p class="text-white lh-base fw-light pt-2">
+              The world's largest marketplace for non fungible token (NFT)
+              artist and collector!
+            </p>
+            <button class="btn btn-dark btn-lg">Discover NFTs</button>
+          </div>
+          <div class="col header-right">
+            <div class="card rounded-0" style="width: 18rem">
+              <img
+                src="https://images.pexels.com/photos/1194420/pexels-photo-1194420.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+                class="card-img-top rounded-0"
+                alt="..."
+              />
+              <div class="card-body">
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit
+                  dolorem doloremque unde nihil, vero voluptatum laborum quod
+                  non voluptatem, sapiente labore aperiam iste ad officia
+                  explicabo ab et vel eum.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
     <!-- Content -->
     <div id="content-wrap"></div>
     <!-- Content end -->
 
     <!-- footer -->
     <div id="footer">
-        <footer class="text-center text-lg-start text-white" style="background-color: #1A4635">
+      <footer
+        class="text-center text-lg-start text-white"
+        style="background-color: #1a4635"
+      >
+        <div class="container p-4 pb-0">
+          <section class="">
+            <div class="row">
+              <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                <h6 class="text-uppercase mb-4 font-weight-bold">
+                  MULTIMEDIA NFT
+                </h6>
+                <p>
+                  Multimedia NFT, masih gatau mau isi apa, ini warna navbar sm
+                  footer gini cocok ga ya
+                </p>
+              </div>
 
-            <div class="container p-4 pb-0">
-                <section class="">
-                    <div class="row">
-                        <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
-                            <h6 class="text-uppercase mb-4 font-weight-bold">
-                                MULTIMEDIA NFT
-                            </h6>
-                            <p>
-                                Multimedia NFT, masih gatau mau isi apa, ini warna navbar sm footer gini cocok ga ya
-                            </p>
-                        </div>
+              <hr class="w-100 clearfix d-md-none" />
 
-                        <hr class="w-100 clearfix d-md-none" />
+              <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                <h6 class="text-uppercase mb-4 font-weight-bold">Products</h6>
+                <p>
+                  <a class="text-white">NFT</a>
+                </p>
+                <p>
+                  <a class="text-white">NFTT</a>
+                </p>
+                <p>
+                  <a class="text-white">NFTTT</a>
+                </p>
+                <p>
+                  <a class="text-white">NFTTTT</a>
+                </p>
+              </div>
 
-                        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
-                            <h6 class="text-uppercase mb-4 font-weight-bold">Products</h6>
-                            <p>
-                                <a class="text-white">NFT</a>
-                            </p>
-                            <p>
-                                <a class="text-white">NFTT</a>
-                            </p>
-                            <p>
-                                <a class="text-white">NFTTT</a>
-                            </p>
-                            <p>
-                                <a class="text-white">NFTTTT</a>
-                            </p>
-                        </div>
+              <hr class="w-100 clearfix d-md-none" />
 
+              <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+                <h6 class="text-uppercase mb-4 font-weight-bold">
+                  Useful links
+                </h6>
+                <p>
+                  <a class="text-white">Your Account</a>
+                </p>
+                <p>
+                  <a class="text-white">Isi apa ya</a>
+                </p>
+                <p>
+                  <a class="text-white">hmmmmm</a>
+                </p>
+                <p>
+                  <a class="text-white">Help</a>
+                </p>
+              </div>
 
-                        <hr class="w-100 clearfix d-md-none" />
+              <hr class="w-100 clearfix d-md-none" />
 
-
-                        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
-                            <h6 class="text-uppercase mb-4 font-weight-bold">
-                                Useful links
-                            </h6>
-                            <p>
-                                <a class="text-white">Your Account</a>
-                            </p>
-                            <p>
-                                <a class="text-white">Isi apa ya</a>
-                            </p>
-                            <p>
-                                <a class="text-white">hmmmmm</a>
-                            </p>
-                            <p>
-                                <a class="text-white">Help</a>
-                            </p>
-                        </div>
-
-
-                        <hr class="w-100 clearfix d-md-none" />
-
-
-                        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
-                            <h6 class="text-uppercase mb-4 font-weight-bold">Contact</h6>
-                            <p><i class="fas fa-home mr-3"></i>Binus, Kemanggisan, ID</p>
-                            <p><i class="fas fa-envelope mr-3"></i> multimedia@gmail.com</p>
-                            <p><i class="fas fa-phone mr-3"></i> + 12 34 56 78</p>
-                            <p><i class="fas fa-print mr-3"></i> + 12 34 56 78</p>
-                        </div>
-
-                    </div>
-
-                </section>
-
-
-                <hr class="my-3">
-
-                <!-- Section: Copyright -->
-                <section class="p-3 pt-0">
-                    <div class="row d-flex align-items-center">
-                        <div class="col-md-7 col-lg-8 text-center text-md-start">
-                            <div class="p-3">
-                                © 2020 Copyright:
-                                <a class="text-white" href="#">MultimediaNFT</a>
-                            </div>
-                        </div>
-
-
-                        <div class="col-md-5 col-lg-4 ml-lg-0 text-center text-md-end">
-                            <!-- Facebook -->
-                            <a class="btn btn-outline-light btn-floating m-1" class="text-white" role="button"><i
-                                    class="fab fa-facebook-f"></i></a>
-
-                            <!-- Twitter -->
-                            <a class="btn btn-outline-light btn-floating m-1" class="text-white" role="button"><i
-                                    class="fab fa-twitter"></i></a>
-
-                            <!-- Google -->
-                            <a class="btn btn-outline-light btn-floating m-1" class="text-white" role="button"><i
-                                    class="fab fa-google"></i></a>
-
-                            <!-- Instagram -->
-                            <a class="btn btn-outline-light btn-floating m-1" class="text-white" role="button"><i
-                                    class="fab fa-instagram"></i></a>
-                        </div>
-                    </div>
-                </section>
+              <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+                <h6 class="text-uppercase mb-4 font-weight-bold">Contact</h6>
+                <p><i class="fas fa-home mr-3"></i>Binus, Kemanggisan, ID</p>
+                <p><i class="fas fa-envelope mr-3"></i> multimedia@gmail.com</p>
+                <p><i class="fas fa-phone mr-3"></i> + 12 34 56 78</p>
+                <p><i class="fas fa-print mr-3"></i> + 12 34 56 78</p>
+              </div>
             </div>
-        </footer>
+          </section>
+
+          <hr class="my-3" />
+
+          <!-- Section: Copyright -->
+          <section class="p-3 pt-0">
+            <div class="row d-flex align-items-center">
+              <div class="col-md-7 col-lg-8 text-center text-md-start">
+                <div class="p-3">
+                  © 2020 Copyright:
+                  <a class="text-white" href="#">MultimediaNFT</a>
+                </div>
+              </div>
+
+              <div class="col-md-5 col-lg-4 ml-lg-0 text-center text-md-end">
+                <!-- Facebook -->
+                <a
+                  class="btn btn-outline-light btn-floating m-1"
+                  class="text-white"
+                  role="button"
+                  ><i class="fab fa-facebook-f"></i
+                ></a>
+
+                <!-- Twitter -->
+                <a
+                  class="btn btn-outline-light btn-floating m-1"
+                  class="text-white"
+                  role="button"
+                  ><i class="fab fa-twitter"></i
+                ></a>
+
+                <!-- Google -->
+                <a
+                  class="btn btn-outline-light btn-floating m-1"
+                  class="text-white"
+                  role="button"
+                  ><i class="fab fa-google"></i
+                ></a>
+
+                <!-- Instagram -->
+                <a
+                  class="btn btn-outline-light btn-floating m-1"
+                  class="text-white"
+                  role="button"
+                  ><i class="fab fa-instagram"></i
+                ></a>
+              </div>
+            </div>
+          </section>
+        </div>
+      </footer>
     </div>
     <!-- footer end -->
 
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-        crossorigin="anonymous"></script>
-
-</body>
-
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
