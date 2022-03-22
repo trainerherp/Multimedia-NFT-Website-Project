@@ -38,12 +38,21 @@ button {
   border-color: #03a696;
 }
 
+.row-flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 /* card */
 
 .card,
 .card-img-top {
   border: none;
   border-radius: 0;
+}
+
+.card {
+  height: 100%;
 }
 
 .card img {
