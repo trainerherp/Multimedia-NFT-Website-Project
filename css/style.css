@@ -1,3 +1,7 @@
+/* IMPORT */
+@import url("./util.css");
+
+/* override bootstrap css */
 p,
 button {
   font-family: "Source Serif Pro", serif;
@@ -12,19 +16,55 @@ h6 {
   font-family: "Nunito", sans-serif;
 }
 
-.bg-primary {
-  background-color: #1a4635;
+button {
+  padding-top: 1rem !important;
+  padding-bottom: 1rem !important;
+  padding-left: 2rem !important;
+  padding-right: 2rem !important;
+  border: none;
+  font-family: "Nunito", sans-serif;
+  border-radius: 0 !important;
 }
 
+.btn-primary {
+  background-color: #025959;
+  border-color: #025959;
+}
+
+.btn-primary:hover,
+.btn-primary:active,
+.btn-primary:focus {
+  background-color: #03a696;
+  border-color: #03a696;
+}
+
+/* card */
+
+.card,
+.card-img-top {
+  border: none;
+  border-radius: 0;
+}
+
+.card img {
+  object-fit: cover;
+  object-position: center center;
+}
+
+.card-title {
+  font-weight: 900;
+}
+
+/* HEADER SECTION */
 header {
   background-image: linear-gradient(
       to right,
-      rgba(5, 24, 33, 0.4) 0%,
-      rgba(5, 24, 33, 0.4) 55%,
+      rgba(5, 24, 33, 0.55) 0%,
+      rgba(5, 24, 33, 0.4) 50%,
       transparent 50%
     ),
     url("https://images.pexels.com/photos/2310123/pexels-photo-2310123.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
-  height: 100vh;
+  min-height: 100vh;
   background-size: cover;
   background-position: center center;
 }
@@ -38,10 +78,18 @@ header {
   padding-right: 15rem;
 }
 
-button {
-  border-radius: 0 !important;
-}
-
 header > nav a {
   color: black;
+}
+
+/* FOOTER */
+
+#footer {
+  bottom: 0;
+  width: 100%;
+}
+
+.nav {
+  position: relative;
+  right: 30px;
 }
