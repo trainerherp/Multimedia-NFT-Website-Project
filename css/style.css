@@ -38,6 +38,14 @@ button {
   border-color: #03a696;
 }
 
+/* .btn-rounded-primary{
+  border-radius: 20px !important;
+  background-color: #025959;
+  border-color: #025959;
+  color: white;
+  padding: 5px 15px !important;
+} */
+
 .row-flex {
   display: flex;
   flex-wrap: wrap;
