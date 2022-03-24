@@ -91,6 +91,12 @@ header > nav a {
   color: black;
 }
 
+/* Profile */
+.vl {
+  border-left: 5px solid #025959;
+  height: 500px;
+}
+
 /* FOOTER */
 
 #footer {
