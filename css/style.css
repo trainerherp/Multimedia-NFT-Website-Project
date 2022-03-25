@@ -97,6 +97,25 @@ header > nav a {
   height: 500px;
 }
 
+.list-group-item-action:hover {
+  background: #025959;
+  color: white;
+}
+
+.required:after {
+  content:" *";
+  color: red;
+}
+
+.profile-picture>input {
+  display: none;
+}
+
+.profile-picture label:hover {
+  opacity: 0.7;
+  cursor: pointer;
+}
+
 /* FOOTER */
 
 #footer {

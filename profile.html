@@ -75,12 +75,47 @@
           </ul>
         </div>
         <div class="col-6 ps-5">
-          <p>tes</p>
+          <h2 class="fw-bold mb-4">Profile Settings</h2>
+          <form action="" id="profile-form">
+            <div class="mb-3">
+              <label for="username" class="form-label required">Username</label>
+              <input type="text" class="form-control" id="username" placeholder="Username" required>
+            </div>
+            <div class="mb-3">
+              <label for="bio" class="form-label">Bio</label>
+              <textarea class="form-control" id="bio" rows="2" placeholder="Tell your story to the world!"></textarea>
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label required">Email</label>
+              <input type="email" class="form-control" id="email" placeholder="Email" required>
+            </div>
+            <div class="mb-4">
+              <div class="mb-3">Links</div>
+              <div class="form-floating">
+                <input type="text" class="form-control" id="floatingInput" placeholder="Instagram">
+                <label for="floatingInput">Instagram</label>
+              </div>
+              <div class="form-floating">
+                <input type="text" class="form-control" id="floatingInput" placeholder="Twitter">
+                <label for="floatingInput">Twitter</label>
+              </div>
+              <div class="form-floating">
+                <input type="text" class="form-control" id="floatingInput" placeholder="YourSite">
+                <label for="floatingInput">Your Site</label>
+              </div>
+            </div>
+          </form>
+          <button type="submit" form="profile-form" value="profile-submit" class="btn btn-primary">Save Changes</button>
         </div>
-        <div class="col-3 d-flex flex-column align-items-center" style="border-left: solid 3px #025959">
-          <div class="fs-4 mb-4">Profile Picture</div>
-          <img src="https://images.pexels.com/photos/1021876/pexels-photo-1021876.jpeg?auto=compress&cs=tinysrgb&w=500&h=500&dpr=1"
-          class="img-fluid rounded" alt="profile-picture" style="width: 12rem; height: 12rem">
+        <div class="col-3" style="border-left: solid 3px #025959">
+          <div class="fs-5 mb-4 text-center">Profile Picture</div>
+          <div class="profile-picture d-flex flex-column align-items-center">
+            <label for="profile-picture" class="mb-4">
+              <img src="https://images.pexels.com/photos/1021876/pexels-photo-1021876.jpeg?auto=compress&cs=tinysrgb&w=500&h=500&dpr=1"
+              class="img-fluid rounded-circle" alt="profile-picture" style="width: 12rem; height: 12rem">
+            </label>
+            <input id="profile-picture" type="file">
+          </div>
         </div>
       </div>
     </section>
