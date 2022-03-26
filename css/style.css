@@ -22,6 +22,14 @@ button {
   border-radius: 0 !important;
 }
 
+.btn {
+  padding: 0.5rem 1rem;
+}
+
+button.btn-lg {
+  padding: 0.75rem 1.5rem;
+}
+
 .btn-primary {
   background-color: #025959;
   border-color: #025959;
