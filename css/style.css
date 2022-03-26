@@ -17,10 +17,6 @@ h6 {
 }
 
 button {
-  padding-top: 1rem !important;
-  padding-bottom: 1rem !important;
-  padding-left: 2rem !important;
-  padding-right: 2rem !important;
   border: none;
   font-family: "Nunito", sans-serif;
   border-radius: 0 !important;
@@ -109,4 +105,50 @@ header > nav a {
 .nav {
   position: relative;
   right: 30px;
+}
+
+.slide-prev,
+.slide-next {
+  position: absolute;
+  opacity: 0;
+  background: none;
+  border: none;
+
+  display: table-cell;
+  text-align: center;
+  font-weight: bold;
+  vertical-align: center;
+  cursor: pointer;
+  font-size: 2rem;
+  padding: 0;
+  color: #808a92;
+  mix-blend-mode: difference;
+  transition: all 0.3s;
+}
+
+.slide-prev:focus,
+.slide-next:focus {
+  outline: none;
+}
+
+.slide-prev:hover,
+.slide-next:hover {
+  color: white;
+}
+
+.slide-prev {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.slide-next {
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+}
+
+#mostPopularWrapper:hover > button {
+  opacity: 1;
+  padding: 1rem;
+  font-size: 2.5rem;
 }
