@@ -103,6 +103,36 @@ header > nav a {
   color: black;
 }
 
+/* Profile */
+.vl {
+  border-left: 5px solid #025959;
+  height: 500px;
+}
+
+.list-group-item-action:hover {
+  background: #025959;
+  color: white;
+}
+
+.required:after {
+  content:" *";
+  color: red;
+}
+
+.profile-picture input {
+  display: none;
+}
+
+.profile-picture label:hover {
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+.form-label {
+  font-weight: bold;
+}
+
+
 /* FOOTER */
 
 #footer {
