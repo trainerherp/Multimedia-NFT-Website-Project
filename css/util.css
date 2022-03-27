@@ -3,7 +3,11 @@
   background-color: #025959 !important;
 }
 
+.bg-black {
+  background-color: black;
+}
+
 /* text color */
 .text-primary {
-  color: #03a696 !important;
+  color: #025959 !important;
 }
