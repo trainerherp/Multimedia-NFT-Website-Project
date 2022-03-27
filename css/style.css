@@ -19,7 +19,6 @@ h6 {
 button {
   border: none;
   font-family: "Nunito", sans-serif;
-  border-radius: 0 !important;
 }
 
 .btn {
@@ -50,21 +49,15 @@ button.btn-lg {
   padding: 5px 15px !important;
 } */
 
-.row-flex {
-  display: flex;
-  flex-wrap: wrap;
+.card {
+  border-radius: 12px;
+  height: 100%;
 }
-
-/* card */
 
 .card,
 .card-img-top {
+  overflow: hidden;
   border: none;
-  border-radius: 0;
-}
-
-.card {
-  height: 100%;
 }
 
 .card img {
@@ -76,27 +69,21 @@ button.btn-lg {
   font-weight: 900;
 }
 
-/* HEADER SECTION */
+.card-body {
+  padding: 1.5rem;
+}
+
+/* Header */
 header {
-  background-image: linear-gradient(
-      to right,
-      rgba(5, 24, 33, 0.55) 0%,
-      rgba(5, 24, 33, 0.45) 50%,
-      transparent 50%
-    ),
-    url("https://images.pexels.com/photos/2310123/pexels-photo-2310123.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
   min-height: 100vh;
+  background-image: url("../images/bg-header.jpg");
   background-size: cover;
   background-position: center center;
 }
 
 .header__title {
-  font-size: 3.75rem;
-  font-weight: 200;
-}
-
-.header-left {
-  padding-right: 15rem;
+  font-size: 4.5rem;
+  font-weight: bold;
 }
 
 header > nav a {
