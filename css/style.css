@@ -54,6 +54,10 @@ button.btn-lg {
   height: 100%;
 }
 
+.card-nft {
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}
+
 .card,
 .card-img-top {
   overflow: hidden;
@@ -81,6 +85,25 @@ header {
   background-position: center center;
 }
 
+@keyframes headerCardAnimation {
+  0% {
+    transform: translateX(16px);
+    transform: translateY(16px);
+    box-shadow: 0px 0px white;
+  }
+  100% {
+    transform: translateX(0px);
+    transform: translateY(0px);
+    box-shadow: 20px 20px #025959;
+  }
+}
+
+header div.card {
+  animation: 0.5s ease-in-out 0s 1 headerCardAnimation;
+  width: 25rem;
+  box-shadow: 20px 20px #025959;
+}
+
 .header__title {
   font-size: 4.5rem;
   font-weight: bold;
@@ -102,7 +125,7 @@ header > nav a {
 }
 
 .required:after {
-  content:" *";
+  content: " *";
   color: red;
 }
 
@@ -118,7 +141,6 @@ header > nav a {
 .form-label {
   font-weight: bold;
 }
-
 
 /* FOOTER */
 
