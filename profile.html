@@ -65,7 +65,7 @@
     <!-- Profile -->
     <section class="container-fluid py-5 px-5">
       <div class="row">
-        <div class="col-3 pe-5" style="border-right: solid 3px #025959">
+        <div class="col-3 ps-4 pe-5" style="border-right: solid 3px #025959">
           <div class="fs-4 mb-4">Settings</div>
           <ul class="list-group">
             <a href="#" class="list-group-item list-group-item-action">Profile</a>
@@ -74,48 +74,67 @@
             <a href="#" class="list-group-item list-group-item-action">Account Support</a>
           </ul>
         </div>
-        <div class="col-6 ps-5">
+        <div class="col-8 px-5">
           <h2 class="fw-bold mb-4">Profile Settings</h2>
           <form action="" id="profile-form">
-            <div class="mb-3">
-              <label for="username" class="form-label required">Username</label>
-              <input type="text" class="form-control" id="username" placeholder="Username" required>
+            <div class="row mb-4">
+              <div class="profile-picture col-3 d-flex flex-column align-items-center">
+                <div class="mb-3">
+                  <span class="fw-bold me-1">Profile Image</span>
+                  <label for="profile-picture"><span><img src="assets/image-icon.webp" alt="image-icon" style="width: 25px;"></span></label>
+                </div>
+                <img src="https://images.pexels.com/photos/1021876/pexels-photo-1021876.jpeg?auto=compress&cs=tinysrgb&w=500&h=500&dpr=1"
+                class="img-fluid rounded-circle" alt="profile-picture" style="width: 12rem; height: 12rem">
+                <input id="profile-picture" type="file">
+              </div>
+              <div class="col-9 ps-5">
+                <div class="mb-3">
+                  <label for="full-name" class="form-label required">Full Name</label>
+                  <input type="text" class="form-control" id="full-name" placeholder="Full Name" required>
+                </div>
+                <div class="mb-3">
+                  <label for="username" class="form-label required">Username</label>
+                  <input type="text" class="form-control" id="username" placeholder="Username" required>
+                </div>
+                <div class="mb-3">
+                  <label for="email" class="form-label required">Email</label>
+                  <input type="email" class="form-control" id="email" placeholder="Email" required>
+                </div>
+              </div>
             </div>
             <div class="mb-3">
               <label for="bio" class="form-label">Bio</label>
               <textarea class="form-control" id="bio" rows="2" placeholder="Tell your story to the world!"></textarea>
             </div>
-            <div class="mb-3">
-              <label for="email" class="form-label required">Email</label>
-              <input type="email" class="form-control" id="email" placeholder="Email" required>
-            </div>
-            <div class="mb-4">
-              <div class="mb-3">Links</div>
-              <div class="form-floating">
+            <div class="mb-5">
+              <div class="fw-bold mb-3">Links</div>
+              <div class="form-floating mb-1">
                 <input type="text" class="form-control" id="floatingInput" placeholder="Instagram">
                 <label for="floatingInput">Instagram</label>
               </div>
-              <div class="form-floating">
+              <div class="form-floating mb-1">
                 <input type="text" class="form-control" id="floatingInput" placeholder="Twitter">
                 <label for="floatingInput">Twitter</label>
               </div>
-              <div class="form-floating">
-                <input type="text" class="form-control" id="floatingInput" placeholder="YourSite">
+              <div class="form-floating mb-1">
+                <input type="text" class="form-control" id="floatingInput" placeholder="Your Site">
                 <label for="floatingInput">Your Site</label>
+              </div>
+            </div>
+            <div class="mb-3 row">
+              <label for="wallet" class="col-2 form-label">Wallet</label>
+              <div class="col-10">
+                <input type="text" id="wallet" class="form-control" placeholder="XXX-Wallet" disabled>
+              </div>
+            </div>
+            <div class="mb-5 row">
+              <label for="balance" class="col-2 form-label">Balance</label>
+              <div class="col-10">
+                <input type="text" id="wallet" class="form-control" placeholder="1.6 ETH" disabled>
               </div>
             </div>
           </form>
           <button type="submit" form="profile-form" value="profile-submit" class="btn btn-primary">Save Changes</button>
-        </div>
-        <div class="col-3" style="border-left: solid 3px #025959">
-          <div class="fs-5 mb-4 text-center">Profile Picture</div>
-          <div class="profile-picture d-flex flex-column align-items-center">
-            <label for="profile-picture" class="mb-4">
-              <img src="https://images.pexels.com/photos/1021876/pexels-photo-1021876.jpeg?auto=compress&cs=tinysrgb&w=500&h=500&dpr=1"
-              class="img-fluid rounded-circle" alt="profile-picture" style="width: 12rem; height: 12rem">
-            </label>
-            <input id="profile-picture" type="file">
-          </div>
         </div>
       </div>
     </section>
