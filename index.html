@@ -12,7 +12,6 @@
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
-
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css"
@@ -36,7 +35,7 @@
     <!-- HEADER -->
     <header class="container-fluid p-0">
       <!-- NAVBAR -->
-      <nav class="text-black navbar navbar-light container-fluid">
+      <nav class="text-black navbar navbar-dark container-fluid py-3 mb-5">
         <div class="container">
           <a class="navbar-brand" href="#">MULMED</a>
           <form class="d-flex">
@@ -78,49 +77,34 @@
       </nav>
       <div class="container py-5">
         <div class="row">
-          <div class="col-7 header-left pt-5">
+          <div class="col-6">
             <h1 class="text-white header__title">
               Discover, create, and sell <br />
               extraordinary
-              <span class="fw-bold">NFTs</span>
+              <span class="text-primary">NFTs</span>
             </h1>
-            <p class="text-white lh-base fw-light pt-2">
-              The world's largest marketplace for non fungible token (NFT)
-              artist and collector!
+            <p class="text-white lh-base fs-5 mt-4">
+              The world's largest marketplace for non fungible token <br />
+              (NFT) artist and collector!
             </p>
-            <button class="btn btn-primary btn-lg">Discover NFTs</button>
-            <br /><br /><br /><br /><br /><br />
-            <div class="text-white">
-              <div class="row">
-                <div class="col text-center border-end">
-                  <h1 class="fw-bold">74K+</h1>
-                  <h6 class="text-white-50 fw-light">Artwork</h6>
-                </div>
-                <div class="col text-center border-end">
-                  <h1 class="fw-bold">26K+</h1>
-                  <h6 class="text-white-50">Auction</h6>
-                </div>
-                <div class="col text-center">
-                  <h1 class="fw-bold">19K+</h1>
-                  <h6 class="text-white-50">Artists</h6>
-                </div>
-              </div>
-            </div>
+            <button class="btn btn-primary btn-lg mt-4 fw-light">
+              Get Started
+            </button>
           </div>
-          <div class="col header-right d-flex justify-content-end">
-            <div class="card" style="width: 30rem">
+          <div class="col-6 d-flex justify-content-center">
+            <div class="card card-featured-nft">
               <img
-                src="https://images.pexels.com/photos/2832382/pexels-photo-2832382.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+                src="https://images.pexels.com/photos/4175054/pexels-photo-4175054.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
                 class="card-img-top"
-                style="height: 30rem"
+                style="height: 100%"
                 alt="..."
               />
-              <div class="card-body">
+              <div class="card-body bg-light">
                 <div class="row mb-3">
                   <div class="col">
                     <h6 class="text-secondary">Art</h6>
                     <h4 class="card-title text-uppercase text-primary">
-                      THE STARRY
+                      Galaxies
                     </h4>
                   </div>
                   <div
@@ -145,8 +129,35 @@
         </div>
       </div>
     </header>
+
+    <section class="statistic-numbers bg-dark container-fluid py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="text-white">
+              <div class="d-flex justify-content-center">
+                <div class="text-center px-5">
+                  <h1 class="fw-bold">
+                    <span class="value">74000</span>
+                  </h1>
+                  <h6 class="text-white-50 fw-light">Artwork</h6>
+                </div>
+                <div class="text-center px-5">
+                  <h1 class="fw-bold value">16000</h1>
+                  <h6 class="text-white-50">Auction</h6>
+                </div>
+                <div class="text-center px-5">
+                  <h1 class="fw-bold value">9000</h1>
+                  <h6 class="text-white-50">Artists</h6>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <!-- Most Popular -->
-    <section class="bg-dark text-white container-fluid py-5">
+    <section class="bg-light container-fluid py-5">
       <div class="container">
         <h2 class="text-center">Most Popular Arts</h2>
         <div class="row">
@@ -159,11 +170,11 @@
               class="carousel slide"
               data-bs-ride="carousel"
             >
-              <div class="carousel-inner">
+              <div class="carousel-inner py-3 px-1">
                 <div class="carousel-item active">
                   <div class="row">
                     <div class="col-4">
-                      <div class="card w-100">
+                      <div class="card w-100 card-nft">
                         <img
                           src="https://images.pexels.com/photos/556669/pexels-photo-556669.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
                           class="card-img-top"
@@ -204,12 +215,12 @@
                       </div>
                     </div>
                     <div class="col-4">
-                      <div class="card w-100">
+                      <div class="card w-100 card-nft">
                         <img
                           src="https://images.pexels.com/photos/9888656/pexels-photo-9888656.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
                           class="card-img-top"
                           style="height: 24rem"
-                          alt="Dock during Sunset"
+                          alt="Dock  Sunset"
                         />
                         <div
                           class="card-body d-flex flex-column justify-content-between"
@@ -220,7 +231,7 @@
                               <h4
                                 class="card-title text-uppercase text-primary"
                               >
-                                Dock during Sunset
+                                Dock Sunset
                               </h4>
                             </div>
                             <div
@@ -245,7 +256,7 @@
                       </div>
                     </div>
                     <div class="col-4">
-                      <div class="card w-100">
+                      <div class="card w-100 card-nft">
                         <img
                           src="https://images.pexels.com/photos/1021876/pexels-photo-1021876.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
                           class="card-img-top"
@@ -290,7 +301,7 @@
                 <div class="carousel-item">
                   <div class="row">
                     <div class="col-4">
-                      <div class="card w-100">
+                      <div class="card w-100 card-nft">
                         <img
                           src="https://images.pexels.com/photos/3573555/pexels-photo-3573555.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
                           class="card-img-top"
@@ -331,7 +342,7 @@
                       </div>
                     </div>
                     <div class="col-4">
-                      <div class="card w-100">
+                      <div class="card w-100 card-nft">
                         <img
                           src="https://images.pexels.com/photos/1702624/pexels-photo-1702624.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
                           class="card-img-top"
@@ -372,7 +383,7 @@
                       </div>
                     </div>
                     <div class="col-4">
-                      <div class="card w-100">
+                      <div class="card w-100 card-nft">
                         <img
                           src="https://images.pexels.com/photos/10559701/pexels-photo-10559701.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
                           class="card-img-top"
@@ -417,7 +428,7 @@
                 <div class="carousel-item">
                   <div class="row">
                     <div class="col-4">
-                      <div class="card w-100">
+                      <div class="card w-100 card-nft">
                         <img
                           src="https://images.pexels.com/photos/164455/pexels-photo-164455.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
                           class="card-img-top"
@@ -458,7 +469,7 @@
                       </div>
                     </div>
                     <div class="col-4">
-                      <div class="card w-100">
+                      <div class="card w-100 card-nft">
                         <img
                           src="https://images.pexels.com/photos/9841281/pexels-photo-9841281.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
                           class="card-img-top"
@@ -499,7 +510,7 @@
                       </div>
                     </div>
                     <div class="col-4">
-                      <div class="card w-100">
+                      <div class="card w-100 card-nft">
                         <img
                           src="https://images.pexels.com/photos/1415734/pexels-photo-1415734.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
                           class="card-img-top"
@@ -1010,11 +1021,53 @@
       </footer>
     </div>
     <!-- footer end -->
-
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+      integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
+
+    <script>
+      $(window).scroll(scrollStatistics);
+      var viewed = false;
+
+      function isScrolledIntoView(elem) {
+        var docViewTop = $(window).scrollTop();
+        var docViewBottom = docViewTop + $(window).height();
+
+        var elemTop = $(elem).offset().top;
+        var elemBottom = elemTop + $(elem).height();
+
+        return elemBottom <= docViewBottom && elemTop >= docViewTop;
+      }
+
+      function scrollStatistics() {
+        if (isScrolledIntoView($(".statistic-numbers")) && !viewed) {
+          viewed = true;
+          $(".value").each(function () {
+            $(this)
+              .prop("Counter", 0)
+              .animate(
+                {
+                  Counter: $(this).text(),
+                },
+                {
+                  duration: 4000,
+                  easing: "swing",
+                  step: function (now) {
+                    $(this).text(Math.ceil(now).toLocaleString());
+                  },
+                }
+              );
+          });
+        }
+      }
+    </script>
   </body>
 </html>
