@@ -54,6 +54,44 @@ button.btn-lg {
   height: 100%;
 }
 
+@keyframes cardFeaturedNFTAnimation {
+  0% {
+    transform: translateX(16px);
+    transform: translateY(16px);
+    box-shadow: 0px 0px white;
+  }
+  100% {
+    transform: translateX(0px);
+    transform: translateY(0px);
+    box-shadow: 16px 16px #025959;
+  }
+}
+
+.card-featured-nft {
+  animation: 1s ease-in-out 0s 1 cardFeaturedNFTAnimation;
+  width: 25rem;
+  box-shadow: 16px 16px #025959;
+}
+
+.card-featured-nft > img {
+  z-index: 1;
+}
+
+.card-featured-nft > .card-body {
+  position: absolute;
+  height: fit-content;
+  bottom: -100px;
+  width: 100%;
+  z-index: 9999;
+  transition: all 0.3s ease-in;
+  opacity: 0;
+}
+
+.card-featured-nft:hover > .card-body {
+  bottom: 0;
+  opacity: 1;
+}
+
 .card-nft {
   box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
 }
@@ -83,25 +121,6 @@ header {
   background-image: url("../images/bg-header.jpg");
   background-size: cover;
   background-position: center center;
-}
-
-@keyframes headerCardAnimation {
-  0% {
-    transform: translateX(16px);
-    transform: translateY(16px);
-    box-shadow: 0px 0px white;
-  }
-  100% {
-    transform: translateX(0px);
-    transform: translateY(0px);
-    box-shadow: 20px 20px #025959;
-  }
-}
-
-header div.card {
-  animation: 0.5s ease-in-out 0s 1 headerCardAnimation;
-  width: 25rem;
-  box-shadow: 20px 20px #025959;
 }
 
 .header__title {
