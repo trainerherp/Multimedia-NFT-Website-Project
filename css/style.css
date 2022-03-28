@@ -12,7 +12,8 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+footer, footerDesc {
   font-family: "Nunito", sans-serif;
 }
 
@@ -40,6 +41,11 @@ button.btn-lg {
   background-color: #03a696;
   border-color: #03a696;
 }
+
+.nav-link {
+  color: white;
+}
+
 
 /* .btn-rounded-primary{
   border-radius: 20px !important;
@@ -170,7 +176,12 @@ header > nav a {
 
 .nav {
   position: relative;
-  right: 30px;
+  left: 50px;
+}
+
+.form {
+  position: relative;
+  left: 200px;
 }
 
 .slide-prev,
