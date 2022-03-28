@@ -79,12 +79,14 @@
           <form action="" id="profile-form">
             <div class="row mb-4">
               <div class="profile-picture col-3 d-flex flex-column align-items-center">
-                <div class="mb-3">
-                  <span class="fw-bold me-1">Profile Image</span>
-                  <label for="profile-picture"><span><img src="assets/image-icon.webp" alt="image-icon" style="width: 25px;"></span></label>
-                </div>
-                <img src="https://images.pexels.com/photos/1021876/pexels-photo-1021876.jpeg?auto=compress&cs=tinysrgb&w=500&h=500&dpr=1"
-                class="img-fluid rounded-circle" alt="profile-picture" style="width: 12rem; height: 12rem">
+                <span class="fw-bold mb-3">Profile Image</span>    
+                <label for="profile-picture">
+                  <div class="image-group">
+                    <img src="https://images.pexels.com/photos/1021876/pexels-photo-1021876.jpeg?auto=compress&cs=tinysrgb&w=500&h=500&dpr=1"
+                    class="img-thumbnail rounded-circle" alt="profile-picture" style="width: 12rem; height: 12rem">
+                    <div class="image-icon-container rounded-circle bg-primary"><img src="assets/image-icon.webp" alt="image-icon" class="image-icon"></div>
+                  </div>
+                </label>
                 <input id="profile-picture" type="file">
               </div>
               <div class="col-9 ps-5">
