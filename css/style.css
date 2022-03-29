@@ -286,6 +286,19 @@ div.profile > img {
   margin-right: 0.5rem;
 }
 
+.accordion-button {
+  color: #025959;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: #03a69621;
+  color: #025959;
+}
+
+.accordion-button:focus {
+  z-index: 3;
+}
+
 #placeBidForm > #price {
   display: none;
 }
