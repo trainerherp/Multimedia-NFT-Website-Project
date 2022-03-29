@@ -138,9 +138,10 @@ header > nav a {
   height: 500px;
 }
 
-.list-group-item-action:hover {
+.settings-list-group:hover {
   background: #025959;
   color: white;
+  opacity: 0.9;
 }
 
 .required:after {
@@ -152,8 +153,12 @@ header > nav a {
   display: none;
 }
 
-.profile-picture label:hover {
+.image-group:hover {
   cursor: pointer;
+}
+
+.image-group:hover .img-thumbnail {
+  opacity: 0.8;
 }
 
 .profile-picture img {
@@ -184,6 +189,19 @@ header > nav a {
   filter: invert(98%);
 }
 
+/* Login/Register */
+
+.wallets {
+  transition: all 0.15s;
+  font-weight: bold;
+}
+
+.wallets:hover {
+  background-color: rgba(54, 50, 50, 0.582);
+  color: white;
+}
+
+/* Login/Register End */
 
 /* FOOTER */
 
