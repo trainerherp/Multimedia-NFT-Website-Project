@@ -12,7 +12,9 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+footer,
+footerDesc {
   font-family: "Nunito", sans-serif;
 }
 
@@ -63,6 +65,10 @@ button.btn-lg {
 .dropdown-item:focus {
   background-color: #03a696;
   border-color: #03a696;
+  color: white;
+}
+
+.nav-link {
   color: white;
 }
 
@@ -191,6 +197,16 @@ header > nav a {
 #footer {
   bottom: 0;
   width: 100%;
+}
+
+.nav {
+  position: relative;
+  left: 50px;
+}
+
+.form {
+  position: relative;
+  left: 200px;
 }
 
 .slide-prev,
