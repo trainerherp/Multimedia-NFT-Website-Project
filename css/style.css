@@ -13,7 +13,8 @@ h3,
 h4,
 h5,
 h6,
-footer, footerDesc {
+footer,
+footerDesc {
   font-family: "Nunito", sans-serif;
 }
 
@@ -30,9 +31,26 @@ button.btn-lg {
   padding: 0.75rem 1.5rem;
 }
 
+.btn-outline-primary {
+  color: #025959;
+  border-color: #025959;
+}
+
 .btn-primary {
   background-color: #025959;
   border-color: #025959;
+}
+
+.btn-outline-primary:hover,
+.btn-outline-primary:active,
+.btn-outline-primary:focus {
+  background-color: #03a696;
+  border-color: #03a696;
+}
+
+.btn-outline-primary.dropdown-toggle.show {
+  background-color: #03a696;
+  border-color: #03a696;
 }
 
 .btn-primary:hover,
@@ -42,10 +60,17 @@ button.btn-lg {
   border-color: #03a696;
 }
 
-.nav-link {
+.dropdown-item:hover,
+.dropdown-item:active,
+.dropdown-item:focus {
+  background-color: #03a696;
+  border-color: #03a696;
   color: white;
 }
 
+.nav-link {
+  color: white;
+}
 
 /* .btn-rounded-primary{
   border-radius: 20px !important;
@@ -270,4 +295,79 @@ header > nav a {
   opacity: 1;
   padding: 1rem;
   font-size: 2.5rem;
+}
+
+.nft-countdown-timer {
+  background-color: #bbd1f32f;
+  width: fit-content;
+  padding: 0.5rem;
+  border-radius: 4px;
+}
+
+.current-nft {
+  aspect-ratio: 1;
+  overflow: hidden;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}
+
+.current-nft img {
+  height: 100%;
+  width: 100%;
+}
+
+.profile {
+  margin-bottom: 1.25rem;
+}
+
+div.profile > img {
+  width: 2rem;
+  height: 2rem;
+  object-fit: cover;
+  object-position: center center;
+  border-radius: 50%;
+  margin-right: 0.5rem;
+}
+
+.accordion-button {
+  color: #025959;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: #03a69621;
+  color: #025959;
+}
+
+.accordion-button:focus {
+  z-index: 3;
+}
+
+#placeBidForm > #price {
+  display: none;
+}
+
+#my-chart {
+  --color: #03a69659;
+  height: 15rem;
+  width: 100%;
+  /* max-width: 300px; */
+  margin: 0 auto;
+}
+
+#my-chart th {
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 0.9rem;
+}
+
+#offersTable th {
+  font-weight: normal;
+}
+
+#offersTable td {
+  color: rgba(0, 0, 0, 0.75);
+}
+
+#offersTable a {
+  color: #03a696;
+  text-decoration: none;
 }
