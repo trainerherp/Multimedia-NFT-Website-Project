@@ -329,3 +329,32 @@ div.profile > img {
   color: #03a696;
   text-decoration: none;
 }
+
+/* Table Pagination */
+.page-item .page-link
+{
+  background-color: #025959;
+  color: white;
+  border: none;
+}
+
+.page-item .page-link:hover
+{
+  background-color: #03a696;
+  color: white;
+  border: none;
+}
+
+#sortDropdownButton
+{
+  background-color: #025959;
+  color: white;
+  border: none;
+}
+
+#sortDropdownButton:hover
+{
+  background-color: #03a696;
+  color: white;
+  border: none;
+}
