@@ -201,12 +201,20 @@ header > nav a {
 
 .nav {
   position: relative;
-  left: 50px;
+  left: 80px;
+  margin: 10px;
 }
 
 .form {
-  position: relative;
-  left: 200px;
+  padding-right: 16px;
+}
+
+.row {
+  text-align: left;
+}
+
+.p-3{
+  text-align: left;
 }
 
 .slide-prev,
