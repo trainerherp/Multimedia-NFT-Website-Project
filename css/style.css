@@ -277,12 +277,20 @@ header > nav a {
 
 .nav {
   position: relative;
-  left: 50px;
+  left: 80px;
+  margin: 10px;
 }
 
 .form {
-  position: relative;
-  left: 200px;
+  padding-right: 16px;
+}
+
+.row {
+  text-align: left;
+}
+
+.p-3{
+  text-align: left;
 }
 
 .slide-prev,
@@ -404,4 +412,33 @@ div.profile > img {
 #offersTable a {
   color: #03a696;
   text-decoration: none;
+}
+
+/* Table Pagination */
+.page-item .page-link
+{
+  background-color: #025959;
+  color: white;
+  border: none;
+}
+
+.page-item .page-link:hover
+{
+  background-color: #03a696;
+  color: white;
+  border: none;
+}
+
+#sortDropdownButton
+{
+  background-color: #025959;
+  color: white;
+  border: none;
+}
+
+#sortDropdownButton:hover
+{
+  background-color: #03a696;
+  color: white;
+  border: none;
 }

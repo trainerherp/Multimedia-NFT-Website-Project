@@ -12,6 +12,7 @@
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -84,45 +85,35 @@
   </head>
   <body style="background-color: #051821">
     <!-- navbar section -->
-    <nav
-      class="text-black navbar container-fluid"
-      style="background-color: #1a4635"
-    >
+    <nav class="text-black navbar navbar-dark container-fluid py-3 mb-5 sticky-top" style="background-color: #025959;">
       <div class="container">
-        <a class="navbar-brand" href="#">MULMED</a>
-        <form class="d-flex">
-          <input
-            class="form-control me-2"
-            type="search"
-            placeholder="Search"
-            style="height: 30px; margin-top: 5px; width: 400px"
-            aria-label="Search"
-          />
-          <input
-            class="btn btn-outline-success text-center"
-            type="submit"
-            style="height: 30px; margin-top: 5px; line-height: 1"
-            value="Search"
-          />
-        </form>
-        <ul class="nav">
+        <a class="navbar-brand" href="#">Adorn</a>
+        <ul class="nav justify-content-end">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Active</a>
+            <form class="form d-flex">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search"
+                style="height: 30px; margin-top: 5px; width: 250px"
+                aria-label="Search"
+              />
+              <input
+                class="btn btn-outline-light text-center"
+                type="submit"
+                style="height: 30px; margin-top: 5px; line-height: 0.5; width: 70px; padding: 0px;"
+                value="Search"
+              />
+            </form>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
+            <a class="nav-link" href="#">Explore</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
+            <a class="nav-link" href="#">Rankings</a>
           </li>
           <li class="nav-item">
-            <a
-              class="nav-link disabled"
-              href="#"
-              tabindex="-1"
-              aria-disabled="true"
-              >Disabled</a
-            >
+            <a class="nav-link" href="#">Profile</a>
           </li>
         </ul>
       </div>
