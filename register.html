@@ -72,179 +72,106 @@
     <!-- NAVBAR END -->
 
     <!-- Register -->
-    <section class="container-fluid my-5 d-flex align-items-center justify-content-center">
-      <div class="card border border-1 bg-primary text-white register-form-animation" style="width: 30vw;">
-        <div class="card-body">
-          <h2 class="mb-2 text-center">Register Now</h2>
-          <h6 class="text-center mb-3">Buy NFT from thousands of artists!</h6>
-          <form action="" id="register-form" autocomplete="off">
+    <section class="container-fluid my-5">
+      <div class="row px-4 py-2 align-items-center" style="height: 70vh;">
+        <div class="col-md-4 title-animation align-items-center text-center px-5 me-5">
+          <h3 class="mb-4">Sign up now to join the largest Indonesian NFT community!</h3>
+          <h5 class="text-muted mb-5">Have an account already?</h5>
+          <button class="btn btn-primary" onclick="gotoLogin()">Sign In</button>
+        </div>
+        <div class="col-1 vertical-line" style="border-left: solid 3px #025959; height: 75vh;"></div>
+        <div class="col-md-5 form-animation">
+          <h2 class="mb-4">Register</h2>
+          <form action="" id="register-form" autocomplete="off" onsubmit="event.preventDefault(); validation()">
             <div class="mb-3">
               <label for="email" class="form-label">Email</label>
-              <input type="email" class="form-control" id="email" placeholder="Email" required>
+              <input type="email" class="form-control" id="email" placeholder="Email">
+              <div class="invalid-feedback" id="email-invalid">Please enter a valid email</div>
             </div>
             <div class="mb-3">
               <label for="username" class="form-label">Username</label>
-              <input type="text" class="form-control" id="username" placeholder="Username" required>
+              <input type="text" class="form-control" id="username" placeholder="Username">
+              <div class="invalid-feedback" id="username-invalid">Username must be at least 3 characters long</div>
             </div>
             <div class="mb-3">
               <label for="password" class="form-label">Password</label>
-              <input type="password" class="form-control" id="password" placeholder="Password" required>
+              <input type="password" class="form-control" id="password" placeholder="Password">
+              <div class="form-text mt-0">Password must be at least 8 characters long, contains a number and an uppercase letter</div>
+              <div class="invalid-feedback" id="password-invalid"></div>
+            </div>
+            <div class="mb-3">
+              <label for="password-confirm" class="form-label">Confirm Password</label>
+              <input type="password" class="form-control" id="password-confirm" placeholder="Confirm Password">
             </div>
             <div class="mb-4">
-              <label for="passwordConfirm" class="form-label">Confirm Password</label>
-              <input type="password" class="form-control" id="passwordConfirm" placeholder="Confirm Password" required>
-              <div class="form-text" id="password-mismatch">Password does not match</div>
+              <label for="wallets-selection" class="form-label">Wallet</label>
+              <select class="form-select" aria-label="wallets-selection">
+                <option selected value="metamask">Metamask</option>
+                <option value="coinbase">Coinbase</option>
+                <option value="alphawallet">AlphaWallet</option>
+              </select>
             </div>
-            <select class="form-select mb-4" aria-label="wallets-selection">
-              <option selected disabled>Choose an Ethereum Wallet for Transactions</option>
-              <option value="metamask">Metamask</option>
-              <option value="coinbase">Coinbase</option>
-              <option value="alphawallet">AlphaWallet</option>
-            </select>
           </form>
-          <div class="d-flex justify-content-center">
-            <button type="submit" form="login-form" value="login-submit" onclick="checkPassword()" class="btn text-white" style="background-color: #03A696;">Register</button>
-          </div>
+          <button type="submit" form="register-form" value="register-submit" class="btn btn-primary text-white">Register</button>
         </div>
-      </div>
-        
+      </div>  
     </section>
     <!-- Register End -->
 
     <!-- footer -->
-    <div id="footer">
-      <footer class="text-center text-lg-start text-white bg-primary">
-        <div class="container p-4 pb-0">
-          <section class="">
-            <div class="row">
-              <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
-                <h6 class="text-uppercase mb-4 font-weight-bold">
-                  Adorn
-                </h6>
-                <p>
-                  Indonesia first and largest digital marketplace for crypto collectibles and non-fungible tokens (NFT). Buy, sell and discover exclusive digital items.
-                </p>
-              </div>
-
-              <hr class="w-100 clearfix d-md-none" />
-
-              <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
-                <h6 class="text-uppercase mb-4 font-weight-bold">MarketPlace</h6>
-                <p>
-                  <a class="text-white"  style="text-decoration: none;">All NFT</a>
-                </p>
-                <p>
-                  <a class="text-white"  style="text-decoration: none;">Art</a>
-                </p>
-                <p>
-                  <a class="text-white"  style="text-decoration: none;">Collectibles</a>
-                </p>
-                <p>
-                  <a class="text-white"  style="text-decoration: none;">Domain Names</a>
-                </p>
-                <p>
-                  <a class="text-white"  style="text-decoration: none;">Music</a>
-                </p>
-                <p>
-                  <a class="text-white"  style="text-decoration: none;">Photography</a>
-                </p>
-              </div>
-
-              <hr class="w-100 clearfix d-md-none" />
-
-              <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
-                <h6 class="text-uppercase mb-4 font-weight-bold">
-                  Resources
-                </h6>
-                <p>
-                  <a class="text-white" style="text-decoration: none;">Help Center</a>
-                </p>
-                <p>
-                  <a class="text-white" style="text-decoration: none;">Partners</a>
-                </p>
-                <p>
-                  <a class="text-white" style="text-decoration: none;">Taxes</a>
-                </p>
-                <p>
-                  <a class="text-white" style="text-decoration: none;">Newsletter</a>
-                </p>
-              </div>
-
-              <hr class="w-100 clearfix d-md-none" />
-
-              <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
-                <h6 class="text-uppercase mb-4 font-weight-bold">Contact</h6>
-                <p><i class="fas fa-home mr-3"></i>Binus, Kemanggisan, ID</p>
-                <p><i class="fas fa-envelope mr-3"></i> multimedia@gmail.com</p>
-                <p><i class="fas fa-phone mr-3"></i> + 12 34 56 78</p>
-                <p><i class="fas fa-print mr-3"></i> + 12 34 56 78</p>
-              </div>
-            </div>
-          </section>
-
-          <hr class="my-3" />
-
-          <!-- Section: Copyright -->
-          <section class="p-3 pt-0">
-            <div class="row d-flex align-items-center">
-              <div class="col-md-7 col-lg-8 text-center text-md-start">
-                <div class="p-3">
-                  © 2020 Copyright :
-                  <a class="text-white" href="#" style="text-decoration: none;">MultimediaNFT</a>
-                </div>
-              </div>
-
-              <div class="col-md-5 col-lg-4 ml-lg-0 text-center text-md-end">
-                <!-- Facebook -->
-                <a
-                  class="btn btn-outline-light btn-floating m-1"
-                  class="text-white"
-                  role="button"
-                  ><i class="fa fa-facebook-f"></i
-                ></a>
-
-                <!-- Twitter -->
-                <a
-                  class="btn btn-outline-light btn-floating m-1"
-                  class="text-white"
-                  role="button"
-                  ><i class="fa fa-twitter"></i
-                ></a>
-
-                <!-- Google -->
-                <a
-                  class="btn btn-outline-light btn-floating m-1"
-                  class="text-white"
-                  role="button"
-                  ><i class="fa fa-google"></i
-                ></a>
-
-                <!-- Instagram -->
-                <a
-                  class="btn btn-outline-light btn-floating m-1"
-                  class="text-white"
-                  role="button"
-                  ><i class="fa fa-instagram"></i
-                ></a>
-              </div>
-            </div>
-          </section>
-        </div>
-      </footer>
-    </div>
+    
     <!-- footer end -->
     <script>
-      function checkPassword() {
+      function validation() {
         let x = document.getElementById("password").value;
-        let y = document.getElementById("passwordConfirm").value;
-        console.log("dowj")
-        if(x != y) {
-          document.getElementById("password-mismatch").style.display = "block";
+        let y = document.getElementById("password-confirm").value;
+        let p = document.getElementById("password-invalid");
+        var numbers = /[0-9]/g, uppercase = /[A-Z]/g, flag = true, emailValid = /@/g;
+        let z = document.getElementById("email").value, a = document.getElementById("username").value;
+        if(!z.match(emailValid)) {
+          let c = document.getElementById("email-invalid");
+          c.style.display = "block";
+          return false;
         }
         else {
-          document.getElementById("password-mismatch").style.display = "none";
-          window.location.href = "login.html"
+          let c = document.getElementById("email-invalid");
+          c.style.display = "none";
         }
+        if(a.length < 3) {
+          let c = document.getElementById("username-invalid");
+          c.style.display = "block";
+          return false;
+        }
+        else {
+          let c = document.getElementById("username-invalid");
+          c.style.display = "none";
+        }
+        if(x.length < 8) {
+          p.style.display = "block";
+          p.innerHTML = "Password length must be longer than 8 characters";
+          return false;
+        }
+        else if(!x.match(numbers)) {
+          p.style.display = "block";
+          p.innerHTML = "Password must contain a number";
+          return false;
+        }
+        else if(!x.match(uppercase)) {
+          p.style.display = "block";
+          p.innerHTML = "Password must contain an uppercase letter";
+          return false;
+        }
+        else if(x != y) {
+          p.style.display = "block";
+          p.innerHTML = "Password does not match";
+          return false;
+        }
+        p.style.display = "none";  
+        window.location.href = "login.html";
+        return true;
+      }
+      function gotoLogin() {
+        window.location.href = "login.html";
       }
     </script>
   </body>

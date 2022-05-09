@@ -222,9 +222,9 @@ header > nav a {
 
 /* Login/Register */
 
-@keyframes loginSlide {
+@keyframes titleSlide {
   0% {
-    transform: translateY(-100%);
+    transform: translateY(-20%);
     opacity: 0;
   }
   100% {
@@ -233,9 +233,9 @@ header > nav a {
   }
 }
 
-@keyframes loginFormSlide {
+@keyframes formSlide {
   0% {
-    transform: translateX(100%);
+    transform: translateX(15%);
     opacity: 0;
   }
   100% {
@@ -244,27 +244,12 @@ header > nav a {
   }
 }
 
-@keyframes registerFormSlide {
-  0% {
-    transform: translateY(-10%);
-    opacity: 0;
-  }
-  100% {
-    transform: translateY(0);
-    opacity: 1;
-  }
+.title-animation {
+  animation: 0.8s ease-in-out 0s 1 titleSlide;
 }
 
-.login-animation {
-  animation: 1s ease-in-out 0s 1 loginSlide;
-}
-
-.login-form-animation {
-  animation: 1s ease-out 0s 1 loginFormSlide;
-}
-
-.register-form-animation {
-  animation: 1s ease-out 0s 1 registerFormSlide;
+.form-animation {
+  animation: 0.8s ease-out 0s 1 formSlide;
 }
 
 .togglePassword {
@@ -275,10 +260,10 @@ header > nav a {
   z-index: 10;
 }
 
-#password-mismatch {
-  display: none;
-  font-weight: bold;
-  color: rgb(222, 53, 53);
+@media screen and (max-width: 767.5px) {
+  .vertical-line {
+    display: none;
+  }
 }
 
 /* Login/Register End */
