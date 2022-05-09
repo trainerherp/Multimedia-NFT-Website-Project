@@ -169,9 +169,10 @@ header > nav a {
   height: 500px;
 }
 
-.list-group-item-action:hover {
+.settings-list-group:hover {
   background: #025959;
   color: white;
+  opacity: 0.9;
 }
 
 .required:after {
@@ -183,14 +184,89 @@ header > nav a {
   display: none;
 }
 
-.profile-picture label:hover {
-  opacity: 0.7;
+.image-group:hover {
   cursor: pointer;
 }
 
-.form-label {
+.image-group:hover .img-thumbnail {
+  opacity: 0.8;
+}
+
+.profile-picture img {
+  object-fit: cover;
+}
+
+.profile-form-label {
   font-weight: bold;
 }
+
+.image-group {
+  position: relative;
+}
+
+.image-icon-container {
+  position: absolute;
+  bottom: 5px;
+  right: 15px;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image-icon {
+  width: 20px;
+  filter: invert(98%);
+}
+
+/* Login/Register */
+
+@keyframes titleSlide {
+  0% {
+    transform: translateY(-20%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes formSlide {
+  0% {
+    transform: translateX(15%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.title-animation {
+  animation: 0.8s ease-in-out 0s 1 titleSlide;
+}
+
+.form-animation {
+  animation: 0.8s ease-out 0s 1 formSlide;
+}
+
+.togglePassword {
+  position: absolute;
+  top: -30px;
+  right: 7px;
+  cursor: pointer;
+  z-index: 10;
+}
+
+@media screen and (max-width: 767.5px) {
+  .vertical-line {
+    display: none;
+  }
+}
+
+/* Login/Register End */
 
 /* FOOTER */
 
