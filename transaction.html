@@ -80,9 +80,40 @@
           <div class="current-nft rounded-3">
             <img
               src="https://images.pexels.com/photos/164455/pexels-photo-164455.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
-              class="img-fluid"
+              class="card-img-top img-fluid"
               alt="Yellow and Brown"
             />
+          </div>
+          <div class="mt-4">
+            <h4 class="fw-bold mb-2">Details</h4>
+            <div>
+              <div class="mb-2 d-flex justify-content-between">
+                <span>Contact Address</span>
+                <span class="text-primary" style="font-weight: 500"
+                  >0x209a...e832</span
+                >
+              </div>
+              <div class="mb-2 d-flex justify-content-between">
+                <span>Token ID</span>
+                <span class="text-primary" style="font-weight: 500">10921</span>
+              </div>
+              <div class="mb-2 d-flex justify-content-between">
+                <span>Token Standard</span>
+                <span style="font-weight: 500">ERC-721</span>
+              </div>
+              <div class="mb-2 d-flex justify-content-between">
+                <span>Blockchain</span>
+                <span style="font-weight: 500">Ethereum</span>
+              </div>
+              <div class="mb-2 d-flex justify-content-between">
+                <span>Creator Fees</span>
+                <span style="font-weight: 500">5%</span>
+              </div>
+              <div class="mb-2 d-flex justify-content-between">
+                <span>Date</span>
+                <span style="font-weight: 500">04/12/2022</span>
+              </div>
+            </div>
           </div>
         </div>
         <div class="col-6">
@@ -193,57 +224,62 @@
                 <div class="accordion-body">
                   <table
                     id="my-chart"
-                    class="charts-css column show-labels show-primary-axis show-3-secondary-axes data-spacing-7"
+                    style="--color: #03a696"
+                    class="charts-css line show-labels show-primary-axis show-3-secondary-axes"
                   >
                     <tbody>
                       <tr>
                         <th scope="row">3/01</th>
-                        <td style="--size: 0.3"></td>
+                        <td style="--start: 0; --size: 0.3">
+                          <span class="data"></span>
+                        </td>
                       </tr>
                       <tr>
                         <th scope="row">3/02</th>
-                        <td style="--size: 0.2"></td>
+                        <td style="--start: 0.3; --size: 0.2"></td>
                       </tr>
                       <tr>
                         <th scope="row">3/03</th>
-                        <td style="--size: 0.275"></td>
+                        <td style="--start: 0.2; --size: 0.275"></td>
                       </tr>
                       <tr>
                         <th scope="row">3/04</th>
-                        <td style="--size: 0.325"></td>
+                        <td style="--start: 0.275; --size: 0.325"></td>
                       </tr>
                       <tr>
                         <th scope="row">3/05</th>
-                        <td style="--size: 0.45"></td>
+                        <td style="--start: 0.325; --size: 0.45"></td>
                       </tr>
                       <tr>
                         <th scope="row">3/06</th>
-                        <td style="--size: 0.4"></td>
+                        <td style="--start: 0.45; --size: 0.4"></td>
                       </tr>
                       <tr>
                         <th scope="row">3/07</th>
-                        <td style="--size: 0.6"></td>
+                        <td style="--start: 0.4; --size: 0.6"></td>
                       </tr>
                       <tr>
                         <th scope="row">3/08</th>
-                        <td style="--size: 0.75"></td>
+                        <td style="--start: 0.6; --size: 0.75"></td>
                       </tr>
                       <tr>
                         <th scope="row">3/09</th>
-                        <td style="--size: 0.675"></td>
+                        <td style="--start: 0.75; --size: 0.675"></td>
                       </tr>
                       <tr>
                         <th scope="row">3/10</th>
-                        <td style="--size: 0.85"></td>
+                        <td style="--start: 0.675; --size: 0.85"></td>
                       </tr>
                       <tr>
                         <th scope="row">3/11</th>
-                        <td style="--size: 0.675"></td>
+                        <td style="--start: 0.85; --size: 0.675"></td>
                       </tr>
                       <tr>
                         <th scope="row" class="fw-bold">3/12</th>
-                        <td style="--size: 0.89; --color: #03a696">
-                          <span class="data text-white">1.5</span>
+                        <td style="--start: 0.675; --size: 0.5">
+                          <span class="data text-black fw-bold text-center"
+                            >1.5 ETH</span
+                          >
                         </td>
                       </tr>
                     </tbody>
@@ -306,6 +342,142 @@
           </div>
         </div>
       </div>
+    </div>
+    <div id="footer">
+      <footer class="text-center text-lg-start text-white bg-primary">
+        <div class="container p-4 pb-0">
+          <section class="">
+            <div class="row">
+              <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                <h6 class="text-uppercase mb-4 font-weight-bold">Adorn</h6>
+                <p>
+                  Indonesia first and largest digital marketplace for crypto
+                  collectibles and non-fungible tokens (NFT). Buy, sell and
+                  discover exclusive digital items.
+                </p>
+              </div>
+
+              <hr class="w-100 clearfix d-md-none" />
+
+              <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                <h6 class="text-uppercase mb-4 font-weight-bold">
+                  MarketPlace
+                </h6>
+                <p>
+                  <a class="text-white" style="text-decoration: none"
+                    >All NFT</a
+                  >
+                </p>
+                <p>
+                  <a class="text-white" style="text-decoration: none">Art</a>
+                </p>
+                <p>
+                  <a class="text-white" style="text-decoration: none"
+                    >Collectibles</a
+                  >
+                </p>
+                <p>
+                  <a class="text-white" style="text-decoration: none"
+                    >Domain Names</a
+                  >
+                </p>
+                <p>
+                  <a class="text-white" style="text-decoration: none">Music</a>
+                </p>
+                <p>
+                  <a class="text-white" style="text-decoration: none"
+                    >Photography</a
+                  >
+                </p>
+              </div>
+
+              <hr class="w-100 clearfix d-md-none" />
+
+              <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+                <h6 class="text-uppercase mb-4 font-weight-bold">Resources</h6>
+                <p>
+                  <a class="text-white" style="text-decoration: none"
+                    >Help Center</a
+                  >
+                </p>
+                <p>
+                  <a class="text-white" style="text-decoration: none"
+                    >Partners</a
+                  >
+                </p>
+                <p>
+                  <a class="text-white" style="text-decoration: none">Taxes</a>
+                </p>
+                <p>
+                  <a class="text-white" style="text-decoration: none"
+                    >Newsletter</a
+                  >
+                </p>
+              </div>
+
+              <hr class="w-100 clearfix d-md-none" />
+
+              <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+                <h6 class="text-uppercase mb-4 font-weight-bold">Contact</h6>
+                <p><i class="fa fa-home mr-3"></i>Binus, Kemanggisan, ID</p>
+                <p><i class="fa fa-envelope mr-3"></i> multimedia@gmail.com</p>
+                <p><i class="fa fa-phone mr-3"></i> + 12 34 56 78</p>
+                <p><i class="fa fa-print mr-3"></i> + 12 34 56 78</p>
+              </div>
+            </div>
+          </section>
+
+          <hr class="my-3" />
+
+          <!-- Section: Copyright -->
+          <section class="p-3 pt-0">
+            <div class="row d-flex align-items-center">
+              <div class="col-md-7 col-lg-8 text-center text-md-start">
+                <div class="p-3">
+                  © 2020 Copyright :
+                  <a class="text-white" href="#" style="text-decoration: none"
+                    >MultimediaNFT</a
+                  >
+                </div>
+              </div>
+
+              <div class="col-md-5 col-lg-4 ml-lg-0 text-center text-md-end">
+                <!-- Facebook -->
+                <a
+                  class="btn btn-outline-light btn-floating m-1"
+                  class="text-white"
+                  role="button"
+                  ><i class="fa fa-facebook-f"></i
+                ></a>
+
+                <!-- Twitter -->
+                <a
+                  class="btn btn-outline-light btn-floating m-1"
+                  class="text-white"
+                  role="button"
+                  ><i class="fa fa-twitter"></i
+                ></a>
+
+                <!-- Google -->
+                <a
+                  class="btn btn-outline-light btn-floating m-1"
+                  class="text-white"
+                  role="button"
+                  ><i class="fa fa-google"></i
+                ></a>
+
+                <!-- Instagram -->
+                <a
+                  class="btn btn-outline-light btn-floating m-1"
+                  class="text-white"
+                  role="button"
+                  ><i class="fa fa-instagram"></i
+                ></a>
+              </div>
+            </div>
+          </section>
+        </div>
+      </footer>
     </div>
   </body>
   <script
