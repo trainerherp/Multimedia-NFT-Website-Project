@@ -39,6 +39,7 @@ button.btn-lg {
 .btn-primary {
   background-color: #025959;
   border-color: #025959;
+  color: white;
 }
 
 .btn-outline-primary:hover,
