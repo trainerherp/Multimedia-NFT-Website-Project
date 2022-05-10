@@ -225,7 +225,7 @@ header > nav a {
 
 @keyframes titleSlide {
   0% {
-    transform: translateY(-20%);
+    transform: translateY(-15%);
     opacity: 0;
   }
   100% {
@@ -236,7 +236,7 @@ header > nav a {
 
 @keyframes formSlide {
   0% {
-    transform: translateX(15%);
+    transform: translateX(10%);
     opacity: 0;
   }
   100% {
