@@ -282,6 +282,22 @@ header > nav a {
   margin: 10px;
 }
 
+.navbar-brand {
+  position: relative;
+  left: 0px;
+  right: 0px;
+  margin: 0px;
+}
+
+.logo-image{
+  width: 90px;
+  height: 90px;
+  /* border-radius: 50%; */
+  overflow: hidden;
+  margin-top: -6px;
+}
+
+
 .form {
   padding-right: 16px;
 }

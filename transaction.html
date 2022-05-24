@@ -33,46 +33,59 @@
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body class="bg-light">
-    <nav class="text-black navbar navbar-dark container-fluid py-3 mb-5">
-      <div class="container">
-        <a class="navbar-brand" href="#">MULMED</a>
-        <form class="d-flex">
-          <input
-            class="form-control me-2"
-            type="search"
-            placeholder="Search"
-            style="height: 30px; margin-top: 5px; width: 400px"
-            aria-label="Search"
-          />
-          <input
-            class="btn btn-outline-success text-center"
-            type="submit"
-            style="height: 30px; margin-top: 5px; line-height: 1"
-            value="Search"
-          />
-        </form>
-        <ul class="nav">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Active</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
-          </li>
-          <li class="nav-item">
-            <a
-              class="nav-link disabled"
-              href="#"
-              tabindex="-1"
-              aria-disabled="true"
-              >Disabled</a
-            >
-          </li>
-        </ul>
-      </div>
-    </nav>
+    <nav
+        class="text-black navbar navbar-dark container-fluid py-3 mb-5 sticky-top bg-primary"
+      >
+      
+        <div class="container">
+        <div class="navbar">
+          <!-- <div class="navbar-content"> -->
+          <a class="navbar-brand" href="/">
+            <div class="logo-image">
+                  <img src="./images/LogoAdorn.1.png" class="img-fluid">
+            </div>
+          </a>
+          <!-- <ul class="nav">
+            <li class="nav-item">Adorn</li>
+          </ul> -->
+          <a class="navbar-brand" style="left: 50px; font-weight: bolder; font-size: 20px;" href="">Adorn</a>
+          <ul class="nav justify-content-end" style="margin-left: 200px;">
+            <li class="nav-item">
+              <form class="form d-flex">
+                <input
+                  class="form-control me-2"
+                  type="search"
+                  placeholder="Search"
+                  style="height: 30px; margin-top: 5px; width: 250px"
+                  aria-label="Search"
+                />
+                <input
+                  class="btn btn-outline-light text-center"
+                  type="submit"
+                  style="
+                    height: 30px;
+                    margin-top: 5px;
+                    line-height: 0.5;
+                    width: 70px;
+                    padding: 0px;
+                  "
+                  value="Search"
+                />
+              </form>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="explore.html">Explore</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Rankings.html">Rankings</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="profile.html">Profile</a>
+            </li>
+          </ul>
+          </div>
+        </div>
+      </nav>
 
     <div class="container pb-5">
       <div class="row">
