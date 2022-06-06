@@ -34,22 +34,26 @@
   </head>
   <body class="bg-light">
     <nav
-        class="text-black navbar navbar-dark container-fluid py-3 mb-5 sticky-top bg-primary"
-      >
-      
-        <div class="container">
+      class="text-black navbar navbar-dark container-fluid py-3 mb-5 sticky-top bg-primary"
+    >
+      <div class="container">
         <div class="navbar">
           <!-- <div class="navbar-content"> -->
           <a class="navbar-brand" href="/">
             <div class="logo-image">
-                  <img src="./images/LogoAdorn.1.png" class="img-fluid">
+              <img src="./images/LogoAdorn.1.png" class="img-fluid" />
             </div>
           </a>
           <!-- <ul class="nav">
             <li class="nav-item">Adorn</li>
           </ul> -->
-          <a class="navbar-brand" style="left: 50px; font-weight: bolder; font-size: 20px;" href="">Adorn</a>
-          <ul class="nav justify-content-end" style="margin-left: 200px;">
+          <a
+            class="navbar-brand"
+            style="left: 50px; font-weight: bolder; font-size: 20px"
+            href="/"
+            >Adorn</a
+          >
+          <ul class="nav justify-content-end" style="margin-left: 200px">
             <li class="nav-item">
               <form class="form d-flex">
                 <input
@@ -79,13 +83,46 @@
             <li class="nav-item">
               <a class="nav-link" href="Rankings.html">Rankings</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="profile.html">Profile</a>
+            <li id="navbar-profile" class="nav-item ms-4">
+              <div class="dropdown">
+                <button
+                  class="btn btn-secondary dropdown-toggle"
+                  type="button"
+                  id="navbar-profile-name"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Hi Erick
+                </button>
+                <ul
+                  class="dropdown-menu text-center"
+                  aria-labelledby="navbar-profile-name"
+                >
+                  <li>
+                    <a class="dropdown-item px-2" href="./profile.html"
+                      >Account</a
+                    >
+                  </li>
+                  <li>
+                    <button id="navbar-logout-button" class="btn btn-danger">
+                      logout
+                    </button>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li id="navbar-button-login" class="nav-item ms-4">
+              <a
+                href="./login.html"
+                class="bg-white text-primary btn btn-secondary"
+              >
+                Sign In
+              </a>
             </li>
           </ul>
-          </div>
         </div>
-      </nav>
+      </div>
+    </nav>
 
     <div class="container pb-5">
       <div class="row">
@@ -493,6 +530,8 @@
       </footer>
     </div>
   </body>
+  <script src="./js/auth.js"></script>
+  <script src="./js/global.js"></script>
   <script
     src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
     integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
