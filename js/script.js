@@ -1,3 +1,5 @@
+// local auth
+
 $("#myBid").on("focus", function () {
   $("#price").show("fast");
 });
@@ -58,6 +60,5 @@ function makeTimer() {
 makeTimer();
 
 setInterval(() => {
-  console.log("hello");
   makeTimer();
 }, 1000);
