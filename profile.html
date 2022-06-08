@@ -33,276 +33,108 @@
     <title>Hello, world!</title>
   </head>
 
-  <body>
+  <body style="background-color: aliceblue">
     <!-- NAVBAR -->
-    <nav
-      class="text-black navbar navbar-dark container-fluid py-3 mb-5 sticky-top bg-primary"
-    >
+    <nav class="text-black navbar navbar-dark container-fluid py-3 bg-primary">
       <div class="container">
-        <div class="navbar">
-          <!-- <div class="navbar-content"> -->
-          <a class="navbar-brand" href="/">
-            <div class="logo-image">
-              <img src="./images/LogoAdorn.1.png" class="img-fluid" />
-            </div>
-          </a>
-          <!-- <ul class="nav">
-            <li class="nav-item">Adorn</li>
-          </ul> -->
-          <a
-            class="navbar-brand"
-            style="left: 50px; font-weight: bolder; font-size: 20px"
-            href="/"
-            >Adorn</a
-          >
-          <ul class="nav justify-content-end" style="margin-left: 200px">
-            <li class="nav-item">
-              <form class="form d-flex">
-                <input
-                  class="form-control me-2"
-                  type="search"
-                  placeholder="Search"
-                  style="height: 30px; margin-top: 5px; width: 250px"
-                  aria-label="Search"
-                />
-                <input
-                  class="btn btn-outline-light text-center"
-                  type="submit"
-                  style="
-                    height: 30px;
-                    margin-top: 5px;
-                    line-height: 0.5;
-                    width: 70px;
-                    padding: 0px;
-                  "
-                  value="Search"
-                />
-              </form>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="explore.html">Explore</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="Rankings.html">Rankings</a>
-            </li>
-            <li id="navbar-profile" class="nav-item ms-4">
-              <div class="dropdown">
-                <button
-                  class="btn btn-secondary dropdown-toggle"
-                  type="button"
-                  id="navbar-profile-name"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  Hi Erick
-                </button>
-                <ul
-                  class="dropdown-menu text-center"
-                  aria-labelledby="navbar-profile-name"
-                >
-                  <li>
-                    <a class="dropdown-item px-2" href="./profile.html"
-                      >Account</a
-                    >
-                  </li>
-                  <li>
-                    <button id="navbar-logout-button" class="btn btn-danger">
-                      logout
-                    </button>
-                  </li>
-                </ul>
-              </div>
-            </li>
-            <li id="navbar-button-login" class="nav-item ms-4">
-              <a
-                href="./login.html"
-                class="bg-white text-primary btn btn-secondary"
-              >
-                Sign In
-              </a>
-            </li>
-          </ul>
-        </div>
+        <a class="navbar-brand" href="index.html">Adorn</a>
+        <form class="form d-flex">
+          <input
+            class="form-control me-2"
+            type="search"
+            placeholder="Search"
+            style="height: 30px; margin-top: 5px; width: 250px"
+            aria-label="Search"
+          />
+          <input
+            class="btn btn-outline-success text-center"
+            type="submit"
+            style="height: 30px; margin-top: 5px; line-height: 0.5; width: 70px; padding: 0px;"
+            value="Search"
+          />
+        </form>
+        <ul class="nav">
+          <li class="nav-item">
+            <a class="nav-link" href="explore.html">Explore</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Rankings.html">Rankings</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="profile.html">Profile</a>
+          </li>
+        </ul>
       </div>
     </nav>
     <!-- NAVBAR END -->
 
     <!-- Profile -->
-    <section class="container-fluid mt-3 mb-5 px-5">
-      <div class="row">
-        <div class="col-3 ps-4 pe-5" style="border-right: solid 3px #025959">
-          <div class="fs-4 mb-4">Settings</div>
-          <ul class="list-group">
-            <a
-              href="#"
-              class="settings-list-group list-group-item list-group-item-action bg-primary text-white"
-              >Profile</a
-            >
-            <a
-              href="#"
-              class="settings-list-group list-group-item list-group-item-action"
-              >Notifications</a
-            >
-            <a
-              href="#"
-              class="settings-list-group list-group-item list-group-item-action"
-              >Settings</a
-            >
-            <a
-              href="#"
-              class="settings-list-group list-group-item list-group-item-action"
-              >Account Support</a
-            >
-          </ul>
-        </div>
-        <div class="col-8 px-5">
+    <section class="container-fluid mt-5 mb-5 px-5">
+      <div class="row justify-content-center">
+        <div class="col-9 py-4 px-5" style="border: 5px solid #025959; border-radius: 20px;">
           <h2 class="fw-bold mb-4">Profile Settings</h2>
           <form action="" id="profile-form" autocomplete="off">
             <div class="row mb-4">
-              <div
-                class="profile-picture col-3 d-flex flex-column align-items-center"
-              >
-                <span class="fw-bold mb-3">Profile Image</span>
+              <div class="profile-picture col-3 d-flex flex-column align-items-center">
+                <span class="fw-bold mb-3">Profile Image</span>    
                 <label for="profile-picture">
                   <div class="image-group rounded-circle">
-                    <img
-                      src="assets/placeholder-image.png"
-                      class="img-thumbnail rounded-circle"
-                      alt="profile-picture"
-                      style="width: 12rem; height: 12rem"
-                    />
+                    <img src="assets/placeholder-image.png" class="img-thumbnail rounded-circle" alt="profile-picture" style="width: 12rem; height: 12rem">
                     <div class="image-icon-container rounded-circle bg-primary">
-                      <img
-                        src="assets/image-icon.webp"
-                        alt="image-icon"
-                        class="image-icon"
-                      />
+                      <img src="assets/image-icon.webp" alt="image-icon" class="image-icon">
                     </div>
                   </div>
                 </label>
-                <input id="profile-picture" type="file" />
+                <input id="profile-picture" type="file">
               </div>
               <div class="col-9 ps-5">
                 <div class="mb-3">
-                  <label
-                    for="full-name"
-                    class="profile-form-label form-label required"
-                    >Full Name</label
-                  >
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="full-name"
-                    placeholder="Full Name"
-                    required
-                  />
+                  <label for="full-name" class="profile-form-label form-label required">Full Name</label>
+                  <input type="text" class="form-control" id="full-name" placeholder="Full Name" required>
                 </div>
                 <div class="mb-3">
-                  <label
-                    for="username"
-                    class="profile-form-label form-label required"
-                    >Username</label
-                  >
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="username"
-                    placeholder="Username"
-                    required
-                  />
+                  <label for="username" class="profile-form-label form-label required">Username</label>
+                  <input type="text" class="form-control" id="username" placeholder="Username" required>
                 </div>
                 <div class="mb-3">
-                  <label
-                    for="email"
-                    class="profile-form-label form-label required"
-                    >Email</label
-                  >
-                  <input
-                    type="email"
-                    class="form-control"
-                    id="email"
-                    placeholder="Email"
-                    required
-                  />
+                  <label for="email" class="profile-form-label form-label required">Email</label>
+                  <input type="email" class="form-control" id="email" placeholder="Email" required>
                 </div>
               </div>
             </div>
             <div class="mb-3">
               <label for="bio" class="profile-form-label form-label">Bio</label>
-              <textarea
-                class="form-control"
-                id="bio"
-                rows="2"
-                placeholder="Tell your story to the world!"
-              ></textarea>
+              <textarea class="form-control" id="bio" rows="2" placeholder="Tell your story to the world!"></textarea>
             </div>
             <div class="mb-5">
               <div class="fw-bold mb-3">Links</div>
               <div class="form-floating mb-1">
-                <input
-                  type="text"
-                  class="form-control"
-                  id="floatingInput"
-                  placeholder="Instagram"
-                />
+                <input type="text" class="form-control" id="floatingInput" placeholder="Instagram">
                 <label for="floatingInput">Instagram</label>
               </div>
               <div class="form-floating mb-1">
-                <input
-                  type="text"
-                  class="form-control"
-                  id="floatingInput"
-                  placeholder="Twitter"
-                />
+                <input type="text" class="form-control" id="floatingInput" placeholder="Twitter">
                 <label for="floatingInput">Twitter</label>
               </div>
               <div class="form-floating mb-1">
-                <input
-                  type="text"
-                  class="form-control"
-                  id="floatingInput"
-                  placeholder="Your Site"
-                />
+                <input type="text" class="form-control" id="floatingInput" placeholder="Your Site">
                 <label for="floatingInput">Your Site</label>
               </div>
             </div>
             <div class="mb-3 row">
-              <label for="wallet" class="col-2 profile-form-label form-label"
-                >Wallet</label
-              >
+              <label for="wallet" class="col-2 profile-form-label form-label">Wallet</label>
               <div class="col-10">
-                <input
-                  type="text"
-                  id="wallet"
-                  class="form-control"
-                  placeholder="Metamask"
-                  disabled
-                />
+                <input type="text" id="wallet" class="form-control" placeholder="Metamask" disabled>
               </div>
             </div>
             <div class="mb-5 row">
-              <label for="balance" class="col-2 profile-form-label form-label"
-                >Balance</label
-              >
+              <label for="balance" class="col-2 profile-form-label form-label">Balance</label>
               <div class="col-10">
-                <input
-                  type="text"
-                  id="wallet"
-                  class="form-control"
-                  placeholder="0 ETH"
-                  disabled
-                />
+                <input type="text" id="wallet" class="form-control" placeholder="0 ETH" disabled>
               </div>
             </div>
           </form>
-          <button
-            type="submit"
-            form="profile-form"
-            value="profile-submit"
-            class="btn btn-primary"
-          >
-            Save Changes
-          </button>
+          <button type="submit" form="profile-form" value="profile-submit" class="btn btn-primary">Save Changes</button>
         </div>
       </div>
     </section>
@@ -315,69 +147,55 @@
           <section class="">
             <div class="row">
               <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
-                <h6 class="text-uppercase mb-4 font-weight-bold">Adorn</h6>
+                <h6 class="text-uppercase mb-4 font-weight-bold">
+                  Adorn
+                </h6>
                 <p>
-                  Indonesia first and largest digital marketplace for crypto
-                  collectibles and non-fungible tokens (NFT). Buy, sell and
-                  discover exclusive digital items.
+                  Indonesia first and largest digital marketplace for crypto collectibles and non-fungible tokens (NFT). Buy, sell and discover exclusive digital items.
                 </p>
               </div>
 
               <hr class="w-100 clearfix d-md-none" />
 
               <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
-                <h6 class="text-uppercase mb-4 font-weight-bold">
-                  MarketPlace
-                </h6>
+                <h6 class="text-uppercase mb-4 font-weight-bold">MarketPlace</h6>
                 <p>
-                  <a class="text-white" style="text-decoration: none"
-                    >All NFT</a
-                  >
+                  <a class="text-white"  style="text-decoration: none;">All NFT</a>
                 </p>
                 <p>
-                  <a class="text-white" style="text-decoration: none">Art</a>
+                  <a class="text-white"  style="text-decoration: none;">Art</a>
                 </p>
                 <p>
-                  <a class="text-white" style="text-decoration: none"
-                    >Collectibles</a
-                  >
+                  <a class="text-white"  style="text-decoration: none;">Collectibles</a>
                 </p>
                 <p>
-                  <a class="text-white" style="text-decoration: none"
-                    >Domain Names</a
-                  >
+                  <a class="text-white"  style="text-decoration: none;">Domain Names</a>
                 </p>
                 <p>
-                  <a class="text-white" style="text-decoration: none">Music</a>
+                  <a class="text-white"  style="text-decoration: none;">Music</a>
                 </p>
                 <p>
-                  <a class="text-white" style="text-decoration: none"
-                    >Photography</a
-                  >
+                  <a class="text-white"  style="text-decoration: none;">Photography</a>
                 </p>
               </div>
 
               <hr class="w-100 clearfix d-md-none" />
 
               <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
-                <h6 class="text-uppercase mb-4 font-weight-bold">Resources</h6>
+                <h6 class="text-uppercase mb-4 font-weight-bold">
+                  Resources
+                </h6>
                 <p>
-                  <a class="text-white" style="text-decoration: none"
-                    >Help Center</a
-                  >
+                  <a class="text-white" style="text-decoration: none;">Help Center</a>
                 </p>
                 <p>
-                  <a class="text-white" style="text-decoration: none"
-                    >Partners</a
-                  >
+                  <a class="text-white" style="text-decoration: none;">Partners</a>
                 </p>
                 <p>
-                  <a class="text-white" style="text-decoration: none">Taxes</a>
+                  <a class="text-white" style="text-decoration: none;">Taxes</a>
                 </p>
                 <p>
-                  <a class="text-white" style="text-decoration: none"
-                    >Newsletter</a
-                  >
+                  <a class="text-white" style="text-decoration: none;">Newsletter</a>
                 </p>
               </div>
 
@@ -385,10 +203,10 @@
 
               <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
                 <h6 class="text-uppercase mb-4 font-weight-bold">Contact</h6>
-                <p><i class="fa fa-home mr-3"></i>Binus, Kemanggisan, ID</p>
-                <p><i class="fa fa-envelope mr-3"></i> multimedia@gmail.com</p>
-                <p><i class="fa fa-phone mr-3"></i> + 12 34 56 78</p>
-                <p><i class="fa fa-print mr-3"></i> + 12 34 56 78</p>
+                <p><i class="fas fa-home mr-3"></i>Binus, Kemanggisan, ID</p>
+                <p><i class="fas fa-envelope mr-3"></i> multimedia@gmail.com</p>
+                <p><i class="fas fa-phone mr-3"></i> + 12 34 56 78</p>
+                <p><i class="fas fa-print mr-3"></i> + 12 34 56 78</p>
               </div>
             </div>
           </section>
@@ -401,9 +219,7 @@
               <div class="col-md-7 col-lg-8 text-center text-md-start">
                 <div class="p-3">
                   © 2020 Copyright :
-                  <a class="text-white" href="#" style="text-decoration: none"
-                    >MultimediaNFT</a
-                  >
+                  <a class="text-white" href="#" style="text-decoration: none;">MultimediaNFT</a>
                 </div>
               </div>
 
@@ -447,11 +263,4 @@
     </div>
     <!-- footer end -->
   </body>
-  <script
-    src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-    crossorigin="anonymous"
-  ></script>
-  <script src="./js/auth.js"></script>
-  <script src="./js/global.js"></script>
 </html>
