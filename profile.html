@@ -36,7 +36,7 @@
   <body style="background-color: aliceblue;">
     <!-- NAVBAR -->
     <nav
-      class="text-black navbar navbar-dark container-fluid py-3 mb-5 sticky-top bg-primary"
+      class="text-black navbar navbar-dark container-fluid mb-5 sticky-top bg-primary"
     >
       <div class="container">
         <div class="navbar">
@@ -156,8 +156,8 @@
                   <input type="text" class="form-control" id="username" placeholder="Username" required>
                 </div>
                 <div class="mb-3">
-                  <label for="email" class="profile-form-label form-label required">Email</label>
-                  <input type="email" class="form-control" id="email" placeholder="Email" required>
+                  <label for="email" class="profile-form-label form-label">Email</label>
+                  <input type="email" class="form-control" id="email" placeholder="email@example.com" disabled>
                 </div>
               </div>
             </div>
@@ -181,15 +181,26 @@
               </div>
             </div>
             <div class="mb-3 row">
-              <label for="wallet" class="col-2 profile-form-label form-label">Wallet</label>
-              <div class="col-10">
+              <label for="wallet" class="col-2 profile-form-label form-label">Wallet 1</label>
+              <div class="col-5">
                 <input type="text" id="wallet" class="form-control" placeholder="Metamask" disabled>
+              </div>
+              <div class="col-1"></div>
+              <div class="col-3">
+                <input type="text" id="wallet" class="form-control" placeholder="0 ETH" disabled>
               </div>
             </div>
             <div class="mb-5 row">
-              <label for="balance" class="col-2 profile-form-label form-label">Balance</label>
-              <div class="col-10">
-                <input type="text" id="wallet" class="form-control" placeholder="0 ETH" disabled>
+              <label for="add-wallet" class="col-2 profile-form-label form-label">Add Wallet</label>
+              <div class="col-5">
+                <select class="form-select" aria-label="add-wallet">
+                  <option selected value="coinbase">Coinbase</option>
+                  <option value="alphawallet">AlphaWallet</option>
+                </select>
+              </div>
+              <div class="col-1"></div>
+              <div class="col-3">
+                <button type="button" class="btn btn-primary">Connect</button>
               </div>
             </div>
           </form>
