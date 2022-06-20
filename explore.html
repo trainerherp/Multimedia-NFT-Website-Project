@@ -45,45 +45,21 @@
       referrerpolicy="no-referrer"
     />
 
-    <!-- overlay -->
     <style>
-      .explore-card {
-        position: relative;
+      .fav{
+        color:red;
       }
 
-      .explore-card-content {
-        display: block;
-        width: 100%;
+      .not-fav{
+        color:grey;
+        
       }
 
-      .overlay {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: rgba(0, 0, 0, 0.6);
-        color: white;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        opacity: 0;
-        transition: opacity 0.3s;
-      }
-
-      .overlay > * {
-        transform: translateY(20px);
-        transition: transform 0.5s;
-      }
-
-      .overlay:hover {
-        opacity: 1;
+      .btn-fav{
         cursor: pointer;
+        font-size: 1.5rem;
       }
 
-      .overlay:hover > * {
-        transform: translateY(0);
-      }
     </style>
   </head>
   <body style="background-color: #051821">
@@ -186,13 +162,13 @@
         <!-- Featured artist -->
         <div class="row my-3">
           <div class="col-12">
-            <h2 style="color: white">Featured Artist</h2>
+            <h1 class="fw-bold mb-4" style="color: white">Featured Artist</h1>
           </div>
           <div class="col-12 owl-carousel owl-theme">
             <div class="item">
               <div class="card">
                 <img
-                  src="https://images.pexels.com/photos/556669/pexels-photo-556669.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+                  src="./images/explore-man-1.jpg"
                   style="height: 20rem"
                   class="card-img-top"
                   alt="..."
@@ -200,10 +176,10 @@
                 <div class="card-body">
                   <div class="card-body row text-center">
                     <div class="col-12">
-                      <h3>Artist Name</h3>
+                      <h3>Radit Putra</h3>
                     </div>
                     <div class="col-12">
-                      <p>Ini penjelasan singkat</p>
+                      <p>Seni adalah oksigen buat gua!</p>
                     </div>
                     <div>
                       <button class="btn btn-primary">Show More</button>
@@ -215,7 +191,7 @@
             <div class="item">
               <div class="card">
                 <img
-                  src="https://images.pexels.com/photos/556669/pexels-photo-556669.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+                  src="./images/explore-woman-1.jpg"
                   style="height: 20rem"
                   class="card-img-top"
                   alt="..."
@@ -223,10 +199,10 @@
                 <div class="card-body">
                   <div class="card-body row text-center">
                     <div class="col-12">
-                      <h3>Artist Name</h3>
+                      <h3>Farah Safitri</h3>
                     </div>
                     <div class="col-12">
-                      <p>Ini penjelasan singkat</p>
+                      <p>Photography enthusiast</p>
                     </div>
                     <div>
                       <button class="btn btn-primary">Show More</button>
@@ -238,7 +214,7 @@
             <div class="item">
               <div class="card">
                 <img
-                  src="https://images.pexels.com/photos/556669/pexels-photo-556669.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+                  src="./images/explore-woman-2.jpg"
                   style="height: 20rem"
                   class="card-img-top"
                   alt="..."
@@ -246,10 +222,10 @@
                 <div class="card-body">
                   <div class="card-body row text-center">
                     <div class="col-12">
-                      <h3>Artist Name</h3>
+                      <h3>Clarissa Sucipto</h3>
                     </div>
                     <div class="col-12">
-                      <p>Ini penjelasan singkat</p>
+                      <p>Living a life I will remember</p>
                     </div>
                     <div>
                       <button class="btn btn-primary">Show More</button>
@@ -261,7 +237,7 @@
             <div class="item">
               <div class="card">
                 <img
-                  src="https://images.pexels.com/photos/556669/pexels-photo-556669.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+                  src="./images/explore-man-2.jpg"
                   style="height: 20rem"
                   class="card-img-top"
                   alt="..."
@@ -269,10 +245,10 @@
                 <div class="card-body">
                   <div class="card-body row text-center">
                     <div class="col-12">
-                      <h3>Artist Name</h3>
+                      <h3>Purwa Kuswoyo</h3>
                     </div>
                     <div class="col-12">
-                      <p>Ini penjelasan singkat</p>
+                      <p>Pecinta alam dan fotografi</p>
                     </div>
                     <div>
                       <button class="btn btn-primary">Show More</button>
@@ -284,7 +260,7 @@
             <div class="item">
               <div class="card">
                 <img
-                  src="https://images.pexels.com/photos/556669/pexels-photo-556669.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+                  src="./images/explore-man-3.jpg"
                   style="height: 20rem"
                   class="card-img-top"
                   alt="..."
@@ -292,33 +268,10 @@
                 <div class="card-body">
                   <div class="card-body row text-center">
                     <div class="col-12">
-                      <h3>Artist Name</h3>
+                      <h3>Rafi Sinaga</h3>
                     </div>
                     <div class="col-12">
-                      <p>Ini penjelasan singkat</p>
-                    </div>
-                    <div>
-                      <button class="btn btn-primary">Show More</button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="item">
-              <div class="card">
-                <img
-                  src="https://images.pexels.com/photos/556669/pexels-photo-556669.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
-                  style="height: 20rem"
-                  class="card-img-top"
-                  alt="..."
-                />
-                <div class="card-body">
-                  <div class="card-body row text-center">
-                    <div class="col-12">
-                      <h3>Artist Name</h3>
-                    </div>
-                    <div class="col-12">
-                      <p>Ini penjelasan singkat</p>
+                      <p>Music is my life!</p>
                     </div>
                     <div>
                       <button class="btn btn-primary">Show More</button>
@@ -331,45 +284,78 @@
         </div>
 
         <!-- nft artwork -->
-        <div class="row mt-5">
-          <div class="col-12 text-center py-4">
-            <h1 style="color: white; font-size: 5rem">
-              Explore <span style="color: #f58800">NFTs</span> Artwork
-            </h1>
-            <h2 style="color: white">
-              Discover the Most Suitable NFT for You!
-            </h2>
-          </div>
-          <!-- <div class="d-flex justify-content-between align-items-center pe-5 py-2">
-          <a href=""><button class="btn-rounded-primary">Sport</button></a>
-          <a href=""><button class="btn-rounded-primary">Virtual</button></a>
-          <a href=""><button class="btn-rounded-primary">Trading Card</button></a>
-          <a href=""><button class="btn-rounded-primary">Art</button></a>
-          <a href=""><button class="btn-rounded-primary">Games</button></a>
-          <a href=""><button class="btn-rounded-primary">Hobbies</button></a>
-          <a href=""><button class="btn-rounded-primary">Music</button></a>
-          <a href=""><button class="btn-rounded-primary">Cars</button></a>
-        </div> -->
+        <div class="row mt-5 pt-5">
           <div class="row">
-            <div class="col-12">
+            <div class="col-4 bg-white px-3 py-4" style="position: sticky; top: 150px; height: fit-content; border-radius: 10px;">
+              <div class="row align-items-center justify-content">
+                <div class="col-12">
+                  <h1 class="fw-bold text-center">NFT & Artwork</h1>
+                </div>
+                <div class="col-12 px-3 mt-3">
+                  <h4>Search</h4>
+                  <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Search here..." aria-label="Recipient's username" aria-describedby="button-addon2">
+                    <button class="btn btn-outline-primary" type="button" id="button-addon2"><i class="fa fa-search" aria-hidden="true"></i></button>
+                  </div>
+                </div>
+                <div class="col-12 my-3 px-3">
+                  <h4>Category</h4>
+                  <select class="form-select" aria-label="Default select example">
+                    <option selected disabled>Add Category</option>
+                    <option value="1">Trending</option>
+                    <option value="2">Top</option>
+                    <option value="3">Art</option>
+                    <option value="3">Domain</option>
+                    <option value="3">Music</option>
+                    <option value="3">Photography</option>
+                    <option value="3">Sports</option>
+                    <option value="3">Trading Card</option>
+                    <option value="3">Utility</option>
+                    <option value="3">Virtual Word</option>
+                  </select>
+                </div>
+                <div class="col-12 d-flex align-items-center flex-wrap">
+                  <span class="btn btn-primary my-1 mx-2" style="min-width:100px">Trending <i class="fa fa-times ms-3" aria-hidden="true"></i></span>
+                  <span class="btn btn-primary my-1 mx-2" style="min-width:100px">Art <i class="fa fa-times ms-3" aria-hidden="true"></i></span>
+                  <span class="btn btn-primary my-1 mx-2" style="min-width:100px">Music <i class="fa fa-times ms-3" aria-hidden="true"></i></span>
+                  <span class="btn btn-primary my-1 mx-2" style="min-width:100px">Photography <i class="fa fa-times ms-3" aria-hidden="true"></i></span>
+                </div>
+                <div class="col-12 mt-4 px-3">
+                  <h4>Price</h4>
+                </div>
+                <div class="col-6 px-3">
+                  <h6>Minimal</h6>
+                  <input type="text" style="border-radius: 10px; height: 45px; border: 1px solid black;">
+                </div>
+                <div class="col-6 px-3">
+                  <h6>Maximal</h6>
+                  <input type="text" style="border-radius: 10px; height: 45px; border: 1px solid black;">
+                </div>
+                <div class="col-12 mt-3 text-end">
+                  <button class="btn btn-outline-primary" style="border-radius: 10px;">Filter Price</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-8">
               <div class="row">
                 <div class="col-4">
                   <div class="card explore-card">
                     <img
-                      src="https://images.pexels.com/photos/556669/pexels-photo-556669.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+                      src="./images/nft-explore-1.jpg"
                       style="height: 15rem"
                       class="card-img-top"
                       alt="..."
                     />
-                    <div class="card-body text-center">
-                      <h4 class="card-title">Nama Artwork</h4>
-                      <p class="card-text">Ini descriptionnya</p>
-                    </div>
-                    <div class="overlay">
-                      <div
-                        class="d-flex flex-column justify-content-center align-items-center"
-                      >
-                        <span>More Details</span>
+                    <div class="card-body text-center pb-0">
+                      <h4 class="card-title">BITCOIN IN HAND</h4>
+                      <p>By: Budi Darmawan</p>
+                      <div class="row justify-content align-items-center mt-3">
+                        <div class="col-8 mb-4">
+                          <a href="transaction.html" class="btn btn-primary">Place a Bid</a>
+                        </div>
+                        <div class="col-4 d-flex align-items-center justify-content-center mb-4">
+                          <i class="fa fa-heart btn-fav not-fav" aria-hidden="true"></i>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -377,20 +363,21 @@
                 <div class="col-4">
                   <div class="card explore-card">
                     <img
-                      src="https://images.pexels.com/photos/556669/pexels-photo-556669.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+                      src="./images/nft-explore-2.jpg"
                       style="height: 15rem"
                       class="card-img-top"
                       alt="..."
                     />
-                    <div class="card-body text-center">
-                      <h4 class="card-title">Nama Artwork</h4>
-                      <p class="card-text">Ini descriptionnya</p>
-                    </div>
-                    <div class="overlay">
-                      <div
-                        class="d-flex flex-column justify-content-center align-items-center"
-                      >
-                        <span>More Details</span>
+                    <div class="card-body text-center pb-0">
+                      <h4 class="card-title">RED HOTEL SIGN</h4>
+                      <p>By: Adiarja Pradipta</p>
+                      <div class="row justify-content align-items-center mt-3">
+                        <div class="col-8 mb-4">
+                          <a href="transaction.html" class="btn btn-primary">Place a Bid</a>
+                        </div>
+                        <div class="col-4 d-flex align-items-center justify-content-center mb-4">
+                          <i class="fa fa-heart btn-fav not-fav" aria-hidden="true"></i>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -398,84 +385,21 @@
                 <div class="col-4">
                   <div class="card explore-card">
                     <img
-                      src="https://images.pexels.com/photos/556669/pexels-photo-556669.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+                      src="./images/nft-explore-3.jpg"
                       style="height: 15rem"
                       class="card-img-top"
                       alt="..."
                     />
-                    <div class="card-body text-center">
-                      <h4 class="card-title">Nama Artwork</h4>
-                      <p class="card-text">Ini descriptionnya</p>
-                    </div>
-                    <div class="overlay">
-                      <div
-                        class="d-flex flex-column justify-content-center align-items-center"
-                      >
-                        <span>More Details</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="my-3"></div>
-                <div class="col-4">
-                  <div class="card explore-card">
-                    <img
-                      src="https://images.pexels.com/photos/556669/pexels-photo-556669.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
-                      style="height: 15rem"
-                      class="card-img-top"
-                      alt="..."
-                    />
-                    <div class="card-body text-center">
-                      <h4 class="card-title">Nama Artwork</h4>
-                      <p class="card-text">Ini descriptionnya</p>
-                    </div>
-                    <div class="overlay">
-                      <div
-                        class="d-flex flex-column justify-content-center align-items-center"
-                      >
-                        <span>More Details</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-4">
-                  <div class="card explore-card">
-                    <img
-                      src="https://images.pexels.com/photos/556669/pexels-photo-556669.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
-                      style="height: 15rem"
-                      class="card-img-top"
-                      alt="..."
-                    />
-                    <div class="card-body text-center">
-                      <h4 class="card-title">Nama Artwork</h4>
-                      <p class="card-text">Ini descriptionnya</p>
-                    </div>
-                    <div class="overlay">
-                      <div
-                        class="d-flex flex-column justify-content-center align-items-center"
-                      >
-                        <span>More Details</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-4">
-                  <div class="card explore-card">
-                    <img
-                      src="https://images.pexels.com/photos/556669/pexels-photo-556669.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
-                      style="height: 15rem"
-                      class="card-img-top"
-                      alt="..."
-                    />
-                    <div class="card-body text-center">
-                      <h4 class="card-title">Nama Artwork</h4>
-                      <p class="card-text">Ini descriptionnya</p>
-                    </div>
-                    <div class="overlay">
-                      <div
-                        class="d-flex flex-column justify-content-center align-items-center"
-                      >
-                        <span>More Details</span>
+                    <div class="card-body text-center pb-0">
+                      <h4 class="card-title">MEXICO MAN</h4>
+                      <p>By: Latif Gunawan</p>
+                      <div class="row justify-content align-items-center mt-3">
+                        <div class="col-8 mb-4">
+                          <a href="transaction.html" class="btn btn-primary">Place a Bid</a>
+                        </div>
+                        <div class="col-4 d-flex align-items-center justify-content-center mb-4">
+                          <i class="fa fa-heart btn-fav not-fav" aria-hidden="true"></i>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -484,20 +408,21 @@
                 <div class="col-4">
                   <div class="card explore-card">
                     <img
-                      src="https://images.pexels.com/photos/556669/pexels-photo-556669.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+                      src="./images/nft-explore-4.jpg"
                       style="height: 15rem"
                       class="card-img-top"
                       alt="..."
                     />
-                    <div class="card-body text-center">
-                      <h4 class="card-title">Nama Artwork</h4>
-                      <p class="card-text">Ini descriptionnya</p>
-                    </div>
-                    <div class="overlay">
-                      <div
-                        class="d-flex flex-column justify-content-center align-items-center"
-                      >
-                        <span>More Details</span>
+                    <div class="card-body text-center pb-0">
+                      <h4 class="card-title">CAKRAWALA</h4>
+                      <p>By: Uli Yuliarti</p>
+                      <div class="row justify-content align-items-center mt-3">
+                        <div class="col-8 mb-4">
+                          <a href="transaction.html" class="btn btn-primary">Place a Bid</a>
+                        </div>
+                        <div class="col-4 d-flex align-items-center justify-content-center mb-4">
+                          <i class="fa fa-heart btn-fav not-fav" aria-hidden="true"></i>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -505,20 +430,21 @@
                 <div class="col-4">
                   <div class="card explore-card">
                     <img
-                      src="https://images.pexels.com/photos/556669/pexels-photo-556669.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+                      src="./images/nft-explore-5.jpg"
                       style="height: 15rem"
                       class="card-img-top"
                       alt="..."
                     />
-                    <div class="card-body text-center">
-                      <h4 class="card-title">Nama Artwork</h4>
-                      <p class="card-text">Ini descriptionnya</p>
-                    </div>
-                    <div class="overlay">
-                      <div
-                        class="d-flex flex-column justify-content-center align-items-center"
-                      >
-                        <span>More Details</span>
+                    <div class="card-body text-center pb-0">
+                      <h4 class="card-title">LANGIT</h4>
+                      <p>By: Lukman Gunawan</p>
+                      <div class="row justify-content align-items-center mt-3">
+                        <div class="col-8 mb-4">
+                          <a href="transaction.html" class="btn btn-primary">Place a Bid</a>
+                        </div>
+                        <div class="col-4 d-flex align-items-center justify-content-center mb-4">
+                          <i class="fa fa-heart btn-fav not-fav" aria-hidden="true"></i>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -526,20 +452,88 @@
                 <div class="col-4">
                   <div class="card explore-card">
                     <img
-                      src="https://images.pexels.com/photos/556669/pexels-photo-556669.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+                      src="./images/nft-explore-6.jpg"
                       style="height: 15rem"
                       class="card-img-top"
                       alt="..."
                     />
-                    <div class="card-body text-center">
-                      <h4 class="card-title">Nama Artwork</h4>
-                      <p class="card-text">Ini descriptionnya</p>
+                    <div class="card-body text-center pb-0">
+                      <h4 class="card-title">THE CASTLE</h4>
+                      <p>By: Siti Zulaika</p>
+                      <div class="row justify-content align-items-center mt-3">
+                        <div class="col-8 mb-4">
+                          <a href="transaction.html" class="btn btn-primary">Place a Bid</a>
+                        </div>
+                        <div class="col-4 d-flex align-items-center justify-content-center mb-4">
+                          <i class="fa fa-heart btn-fav not-fav" aria-hidden="true"></i>
+                        </div>
+                      </div>
                     </div>
-                    <div class="overlay">
-                      <div
-                        class="d-flex flex-column justify-content-center align-items-center"
-                      >
-                        <span>More Details</span>
+                  </div>
+                </div>
+                <div class="my-3"></div>
+                <div class="col-4">
+                  <div class="card explore-card">
+                    <img
+                      src="./images/nft-explore-7.jpg"
+                      style="height: 15rem"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div class="card-body text-center pb-0">
+                      <h4 class="card-title">PADANG GURUN</h4>
+                      <p>By: Kiki Saputra</p>
+                      <div class="row justify-content align-items-center mt-3">
+                        <div class="col-8 mb-4">
+                          <a href="transaction.html" class="btn btn-primary">Place a Bid</a>
+                        </div>
+                        <div class="col-4 d-flex align-items-center justify-content-center mb-4">
+                          <i class="fa fa-heart btn-fav not-fav" aria-hidden="true"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-4">
+                  <div class="card explore-card">
+                    <img
+                      src="./images/nft-explore-8.jpg"
+                      style="height: 15rem"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div class="card-body text-center pb-0">
+                      <h4 class="card-title">MONOKROM</h4>
+                      <p>By: Mariadi Rajasa</p>
+                      <div class="row justify-content align-items-center mt-3">
+                        <div class="col-8 mb-4">
+                          <a href="transaction.html" class="btn btn-primary">Place a Bid</a>
+                        </div>
+                        <div class="col-4 d-flex align-items-center justify-content-center mb-4">
+                          <i class="fa fa-heart btn-fav not-fav" aria-hidden="true"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-4">
+                  <div class="card explore-card">
+                    <img
+                      src="./images/nft-explore-9.jpg"
+                      style="height: 15rem"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div class="card-body text-center pb-0">
+                      <h4 class="card-title">LONG ROAD</h4>
+                      <p>By: Indah Puspasari</p>
+                      <div class="row justify-content align-items-center mt-3">
+                        <div class="col-8 mb-4">
+                          <a href="transaction.html" class="btn btn-primary">Place a Bid</a>
+                        </div>
+                        <div class="col-4 d-flex align-items-center justify-content-center mb-4">
+                          <i class="fa fa-heart btn-fav not-fav" aria-hidden="true"></i>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -733,6 +727,22 @@
           },
         },
       });
+
+      function updateTextInput(val) {
+          document.getElementById('textInput').value=val; 
+        }
+
+        $( ".btn-fav" ).click(function() {
+          if($(this).hasClass("fav")){
+            $(this).removeClass("fav")
+            $(this).addClass("not-fav")
+          } else {
+            $(this).addClass("fav")
+            $(this).removeClass("not-fav")
+          }
+          
+
+        });
     </script>
     <!-- owl carousel end -->
   </body>
