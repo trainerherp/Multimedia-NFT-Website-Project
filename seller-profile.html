@@ -149,15 +149,15 @@
                         <div class="row align-items-center justify-content-center py-3" style="width:100%;">
                             <div class="col-12 d-flex align-items-center justify-content-between">
                                 <div class="my-2">
-                                    <h1>Radit Putra</h1>
+                                    <h1 id="sellerName">Radit Putra</h1>
                                 </div>
                                 <div class="pb-3">
                                     <span class="fw-bold"><i class="fa fa-calendar me-2" aria-hidden="true"></i>Joined February 2022</span>
                                 </div>
                             </div>
                             <div class="col-12">
-                                <h5 class="mb-4">~Seni adalah oksigen buat gua!</h5>
-                                <p>Kenalin, nama gua Radit, pecinta fotografi dari kecil. Gua lulusan Binus University tahun 2019 dan memutuskan untuk terus mengejar impian dan cita-cita gua dalams seni fotografi</p>
+                                <h5 class="mb-4">~Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h5>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
                             </div>
                             <div class="col-12">
                                 <button class="btn btn-outline-primary">Follow me for more content!</button>
@@ -165,7 +165,7 @@
                         </div>
                     </div>
                     <div class="col-6 text-center card-featured-nft" style="border-radius: 10px;">
-                        <img src="./images/explore-man-1.jpg" style="height: 25rem; box-shadow: 16px 16px #025959;" alt="..." class="rounded shadow-sm">
+                        <img id="sellerPhoto" src="./images/explore-man-1.jpg" style="height: 25rem; box-shadow: 16px 16px #025959;" alt="..." class="rounded shadow-sm">
                     </div>
                 </div>
             </div>
@@ -209,8 +209,7 @@
                                         alt="..."
                                         />
                                         <div class="card-body text-center pb-0">
-                                            <h4 class="card-title">CAKRAWALA</h4>
-                                            <p>By: Radit Putra</p>
+                                            <h4 class="card-title mb-3">CAKRAWALA</h4>
                                         </div>
                                     </div>
                                 </div>
@@ -223,8 +222,7 @@
                                         alt="..."
                                         />
                                         <div class="card-body text-center pb-0">
-                                            <h4 class="card-title">LANGIT</h4>
-                                            <p>By: Radit Putra</p>
+                                            <h4 class="card-title mb-3">LANGIT</h4>
                                         </div>
                                     </div>
                                 </div>
@@ -415,6 +413,7 @@
     ></script>
     <script src="./js/auth.js"></script>
     <script src="./js/global.js"></script>
+    <script src="./js/seller-profile.js"></script>
     <script>
       var owl = $(".owl-carousel");
       owl.owlCarousel({
@@ -436,22 +435,6 @@
           },
         },
       });
-
-      function updateTextInput(val) {
-          document.getElementById('textInput').value=val; 
-        }
-
-        $( ".btn-fav" ).click(function() {
-          if($(this).hasClass("fav")){
-            $(this).removeClass("fav")
-            $(this).addClass("not-fav")
-          } else {
-            $(this).addClass("fav")
-            $(this).removeClass("not-fav")
-          }
-          
-
-        });
     </script>
     <!-- owl carousel end -->
   </body>

@@ -6,6 +6,7 @@ function changeTransactionPageContent() {
   const src = urlParams.get("src");
   const nftName = urlParams.get("nftName");
   const currentBid = urlParams.get("currentBid");
+  const seller = urlParams.get("seller");
 
   if (src) {
     let transactionNFTImage = document.getElementById("transactionNFTImage");
@@ -27,5 +28,10 @@ function changeTransactionPageContent() {
       "transactionCurrentBid"
     );
     transactionCurrentBid.textContent = currentBid + " ETH";
+  }
+
+  if (seller) {
+    let transatctionSeller = document.getElementById("transactionSeller");
+    transatctionSeller.textContent = "@" + seller;
   }
 }
